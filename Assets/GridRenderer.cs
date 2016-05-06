@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GridRenderer : MonoBehaviour {
 
-	public Object LevelFile = "";
+	public Object LevelFile;
 
 	// Use this for initialization
 	void Start () {
