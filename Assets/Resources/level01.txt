@@ -1,0 +1,10 @@
+.x............x.
+xxxxxxxxxxxxxxxx
+.x.....xx.....x.
+.x..xxxxxxxx..x.
+.x..xxxxxxxx..x.
+.x.....xx.....x.
+xxxxxxxxxxxxxxxx
+.x............x.
+
+x default_floor
