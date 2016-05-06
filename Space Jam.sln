@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{0B3991E0-2775-DA5F-5029-1683796C49AC}") = "Space Jam", "Assembly-CSharp.csproj", "{C7F03B47-7833-5EE4-D21C-9FFB40B091B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7F03B47-7833-5EE4-D21C-9FFB40B091B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7F03B47-7833-5EE4-D21C-9FFB40B091B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7F03B47-7833-5EE4-D21C-9FFB40B091B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7F03B47-7833-5EE4-D21C-9FFB40B091B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
