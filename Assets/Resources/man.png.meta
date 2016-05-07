@@ -1,0 +1,785 @@
+fileFormatVersion: 2
+guid: c33638dff9df54705b2dcd2008190eab
+timeCreated: 1462640092
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: man_0
+    21300002: man_1
+    21300004: man_2
+    21300006: man_3
+    21300008: man_4
+    21300010: man_5
+    21300012: man_6
+    21300014: man_7
+    21300016: man_8
+    21300018: man_9
+    21300020: man_10
+    21300022: man_11
+    21300024: man_12
+    21300026: man_13
+    21300028: man_14
+    21300030: man_15
+    21300032: man_16
+    21300034: man_17
+    21300036: man_18
+    21300038: man_19
+    21300040: man_20
+    21300042: man_21
+    21300044: man_22
+    21300046: man_23
+    21300048: man_24
+    21300050: man_25
+    21300052: man_26
+    21300054: man_27
+    21300056: man_28
+    21300058: man_29
+    21300060: man_30
+    21300062: man_31
+    21300064: man_32
+    21300066: man_33
+    21300068: man_34
+    21300070: man_35
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 64
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: man_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: -13}
+        - {x: 15, y: -63}
+        - {x: 46, y: -63}
+        - {x: 49, y: -59}
+        - {x: 49, y: -29}
+        - {x: 44, y: -13}
+    - name: man_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 45, y: -13}
+        - {x: 20, y: -13}
+        - {x: 17, y: -14}
+        - {x: 15, y: -21}
+        - {x: 15, y: -57}
+        - {x: 21, y: -63}
+        - {x: 44, y: -63}
+        - {x: 47, y: -61}
+        - {x: 49, y: -58}
+        - {x: 49, y: -31}
+    - name: man_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: -13}
+        - {x: 15, y: -19}
+        - {x: 15, y: -57}
+        - {x: 25, y: -64}
+        - {x: 49, y: -64}
+        - {x: 49, y: -15}
+        - {x: 45, y: -13}
+    - name: man_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23, y: -14}
+        - {x: 17, y: -15}
+        - {x: 15, y: -26}
+        - {x: 15, y: -55}
+        - {x: 26, y: -64}
+        - {x: 45, y: -64}
+        - {x: 48, y: -56}
+        - {x: 48, y: -31}
+        - {x: 43, y: -14}
+    - name: man_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: -13}
+        - {x: 15, y: -55}
+        - {x: 18, y: -60}
+        - {x: 27, y: -64}
+        - {x: 49, y: -64}
+        - {x: 49, y: -15}
+        - {x: 46, y: -13}
+    - name: man_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: -13}
+        - {x: 16, y: -14}
+        - {x: 15, y: -21}
+        - {x: 15, y: -55}
+        - {x: 21, y: -63}
+        - {x: 49, y: -63}
+        - {x: 49, y: -13}
+    - name: man_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18, y: -13}
+        - {x: 15, y: -20}
+        - {x: 15, y: -59}
+        - {x: 21, y: -64}
+        - {x: 34, y: -64}
+        - {x: 48, y: -62}
+        - {x: 49, y: -55}
+        - {x: 49, y: -13}
+    - name: man_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26, y: -14}
+        - {x: 18, y: -16}
+        - {x: 16, y: -23}
+        - {x: 16, y: -51}
+        - {x: 20, y: -64}
+        - {x: 49, y: -64}
+        - {x: 49, y: -14}
+    - name: man_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 41, y: -13}
+        - {x: 25, y: -13}
+        - {x: 18, y: -15}
+        - {x: 15, y: -31}
+        - {x: 15, y: -46}
+        - {x: 17, y: -56}
+        - {x: 22, y: -64}
+        - {x: 41, y: -64}
+        - {x: 49, y: -53}
+        - {x: 49, y: -36}
+        - {x: 46, y: -19}
+    - name: man_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23, y: -13}
+        - {x: 21, y: -15}
+        - {x: 21, y: -64}
+        - {x: 41, y: -64}
+        - {x: 45, y: -63}
+        - {x: 45, y: -14}
+        - {x: 40, y: -13}
+    - name: man_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38, y: -14}
+        - {x: 24, y: -14}
+        - {x: 19, y: -20}
+        - {x: 21, y: -35}
+        - {x: 23, y: -45}
+        - {x: 17, y: -53}
+        - {x: 17, y: -58}
+        - {x: 19, y: -63}
+        - {x: 24, y: -64}
+        - {x: 44, y: -64}
+        - {x: 46, y: -60}
+        - {x: 46, y: -16}
+    - name: man_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: -13}
+        - {x: 19, y: -16}
+        - {x: 19, y: -63}
+        - {x: 41, y: -63}
+        - {x: 45, y: -62}
+        - {x: 45, y: -13}
+    - name: man_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23, y: -13}
+        - {x: 21, y: -17}
+        - {x: 21, y: -53}
+        - {x: 26, y: -63}
+        - {x: 40, y: -63}
+        - {x: 47, y: -58}
+        - {x: 47, y: -21}
+        - {x: 45, y: -13}
+    - name: man_13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23, y: -13}
+        - {x: 20, y: -18}
+        - {x: 20, y: -63}
+        - {x: 23, y: -64}
+        - {x: 43, y: -64}
+        - {x: 48, y: -55}
+        - {x: 48, y: -17}
+        - {x: 39, y: -13}
+    - name: man_14
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 46, y: -16}
+        - {x: 39, y: -14}
+        - {x: 24, y: -14}
+        - {x: 18, y: -20}
+        - {x: 18, y: -64}
+        - {x: 41, y: -64}
+        - {x: 50, y: -52}
+        - {x: 50, y: -45}
+    - name: man_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 39, y: -13}
+        - {x: 24, y: -13}
+        - {x: 21, y: -17}
+        - {x: 21, y: -51}
+        - {x: 22, y: -62}
+        - {x: 22, y: -64}
+        - {x: 37, y: -64}
+        - {x: 43, y: -63}
+        - {x: 48, y: -53}
+        - {x: 48, y: -37}
+        - {x: 46, y: -15}
+    - name: man_16
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 39, y: -13}
+        - {x: 21, y: -13}
+        - {x: 21, y: -53}
+        - {x: 23, y: -64}
+        - {x: 38, y: -64}
+        - {x: 46, y: -59}
+        - {x: 47, y: -51}
+        - {x: 47, y: -22}
+        - {x: 46, y: -15}
+    - name: man_17
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: -13}
+        - {x: 21, y: -64}
+        - {x: 42, y: -64}
+        - {x: 46, y: -54}
+        - {x: 46, y: -20}
+        - {x: 43, y: -13}
+    - name: man_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37, y: -64}
+        - {x: 46, y: -64}
+        - {x: 49, y: -58}
+        - {x: 49, y: -29}
+        - {x: 46, y: -15}
+        - {x: 40, y: -13}
+        - {x: 20, y: -13}
+        - {x: 15, y: -17}
+        - {x: 15, y: -64}
+        - {x: 29, y: -64}
+        - {x: 31, y: -60}
+        - {x: 31, y: -56}
+        - {x: 33, y: -60}
+    - name: man_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42, y: -13}
+        - {x: 22, y: -13}
+        - {x: 18, y: -15}
+        - {x: 15, y: -33}
+        - {x: 15, y: -55}
+        - {x: 20, y: -64}
+        - {x: 46, y: -64}
+        - {x: 48, y: -58}
+        - {x: 49, y: -53}
+        - {x: 49, y: -30}
+    - name: man_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 39, y: -13}
+        - {x: 18, y: -13}
+        - {x: 15, y: -14}
+        - {x: 15, y: -64}
+        - {x: 45, y: -64}
+        - {x: 48, y: -63}
+        - {x: 49, y: -56}
+        - {x: 49, y: -29}
+        - {x: 46, y: -15}
+    - name: man_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 41, y: -14}
+        - {x: 16, y: -14}
+        - {x: 16, y: -58}
+        - {x: 19, y: -64}
+        - {x: 46, y: -64}
+        - {x: 49, y: -56}
+        - {x: 49, y: -28}
+        - {x: 43, y: -18}
+    - name: man_22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 39, y: -13}
+        - {x: 22, y: -13}
+        - {x: 18, y: -19}
+        - {x: 15, y: -39}
+        - {x: 15, y: -54}
+        - {x: 20, y: -64}
+        - {x: 47, y: -64}
+        - {x: 49, y: -56}
+        - {x: 49, y: -24}
+        - {x: 46, y: -15}
+    - name: man_23
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 39, y: -13}
+        - {x: 19, y: -13}
+        - {x: 15, y: -16}
+        - {x: 15, y: -64}
+        - {x: 44, y: -64}
+        - {x: 49, y: -57}
+        - {x: 49, y: -28}
+        - {x: 46, y: -15}
+    - name: man_24
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 39, y: -13}
+        - {x: 18, y: -13}
+        - {x: 15, y: -16}
+        - {x: 15, y: -64}
+        - {x: 46, y: -64}
+        - {x: 49, y: -58}
+        - {x: 49, y: -18}
+    - name: man_25
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22, y: -14}
+        - {x: 15, y: -27}
+        - {x: 15, y: -56}
+        - {x: 18, y: -63}
+        - {x: 19, y: -64}
+        - {x: 41, y: -64}
+        - {x: 48, y: -58}
+        - {x: 48, y: -19}
+        - {x: 40, y: -14}
+    - name: man_26
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 64
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22, y: -13}
+        - {x: 19, y: -19}
+        - {x: 15, y: -30}
+        - {x: 15, y: -52}
+        - {x: 18, y: -64}
+        - {x: 43, y: -64}
+        - {x: 49, y: -59}
+        - {x: 49, y: -17}
+        - {x: 39, y: -13}
+    - name: man_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: -13}
+        - {x: 19, y: -20}
+        - {x: 19, y: -59}
+        - {x: 23, y: -64}
+        - {x: 38, y: -64}
+        - {x: 43, y: -63}
+        - {x: 43, y: -14}
+        - {x: 41, y: -13}
+    - name: man_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: -14}
+        - {x: 18, y: -17}
+        - {x: 18, y: -64}
+        - {x: 44, y: -64}
+        - {x: 47, y: -60}
+        - {x: 47, y: -18}
+        - {x: 39, y: -14}
+    - name: man_29
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19, y: -13}
+        - {x: 19, y: -62}
+        - {x: 22, y: -63}
+        - {x: 45, y: -63}
+        - {x: 45, y: -16}
+        - {x: 39, y: -13}
+    - name: man_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: -13}
+        - {x: 17, y: -63}
+        - {x: 41, y: -63}
+        - {x: 43, y: -53}
+        - {x: 43, y: -15}
+        - {x: 38, y: -13}
+    - name: man_31
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37, y: -13}
+        - {x: 19, y: -13}
+        - {x: 16, y: -14}
+        - {x: 16, y: -64}
+        - {x: 40, y: -64}
+        - {x: 44, y: -60}
+        - {x: 44, y: -15}
+    - name: man_32
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 39, y: -14}
+        - {x: 21, y: -14}
+        - {x: 14, y: -32}
+        - {x: 14, y: -58}
+        - {x: 17, y: -64}
+        - {x: 44, y: -64}
+        - {x: 46, y: -52}
+        - {x: 46, y: -27}
+        - {x: 45, y: -17}
+    - name: man_33
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23, y: -13}
+        - {x: 19, y: -16}
+        - {x: 16, y: -36}
+        - {x: 16, y: -55}
+        - {x: 23, y: -64}
+        - {x: 39, y: -64}
+        - {x: 43, y: -63}
+        - {x: 43, y: -15}
+        - {x: 37, y: -13}
+    - name: man_34
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: -13}
+        - {x: 17, y: -26}
+        - {x: 17, y: -56}
+        - {x: 24, y: -64}
+        - {x: 37, y: -64}
+        - {x: 43, y: -54}
+        - {x: 43, y: -14}
+        - {x: 41, y: -13}
+    - name: man_35
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18, y: -13}
+        - {x: 18, y: -64}
+        - {x: 41, y: -64}
+        - {x: 43, y: -63}
+        - {x: 43, y: -15}
+        - {x: 38, y: -13}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
