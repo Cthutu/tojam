@@ -65,13 +65,17 @@ public class PlayerControl : MonoBehaviour {
 			if (dir.sqrMagnitude != 0f)
 			{
 				dir.Normalize();
+				Vector3 movement = dir;
 				anim.SetFloat("SpeedX", dir.x);
 				anim.SetFloat("SpeedY", dir.y);
+				anim.SetFloat("LastMoveX", dir.x);
+				anim.SetFloat("LastMoveY", dir.y);
+				Debug.Log(dir);
 				anim.SetBool("Walking", true);
 
-				dir *= Time.deltaTime * speed;
+				movement *= Time.deltaTime * speed;
 
-				Vector3 newPos = oldPos + dir;
+				Vector3 newPos = oldPos + movement;
 				
 				// Test to see if we've past the target
 				if ((target - oldPos).sqrMagnitude <= (newPos - oldPos).sqrMagnitude)
@@ -81,21 +85,14 @@ public class PlayerControl : MonoBehaviour {
 					moving = false;
 					anim.SetFloat("SpeedX", 0f);
 					anim.SetFloat("SpeedY", 0f);
+					anim.SetFloat("LastMoveX", dir.x);
+					anim.SetFloat("LastMoveY", dir.y);
+					Debug.Log(dir);
 					anim.SetBool("Walking", false);
 				}
 				transform.position = newPos;
 			}
 		}
-	}
-
-	void FixedUpdate()
-	{
-		float lastInputX = Input.GetAxis("Horizontal");
-		float lastInputY = Input.GetAxis("Vertical");
-
-		anim.SetFloat("LastMoveX", lastInputX < 0.0f ? -1.0f : lastInputX > 0.0f ? 1.0f : 0.0f);
-		anim.SetFloat("LastMoveY", lastInputY < 0.0f ? -1.0f : lastInputY > 0.0f ? 1.0f : 0.0f);
-
 	}
 
 }
