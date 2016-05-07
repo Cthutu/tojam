@@ -7,7 +7,6 @@ public class GridRenderer : MonoBehaviour {
 
 	public TextAsset LevelFile;
 
-	private int m_zoom = 1;
 	private const int kGridWidth = 16;
 	private const int kGridHeight = 8;
 	private const int kSquarePixelSize = 64;
@@ -114,14 +113,16 @@ public class GridRenderer : MonoBehaviour {
 
 			SpriteRenderer renderer = gob.AddComponent<SpriteRenderer>();
 			Texture2D tex = Resources.Load<Texture2D>(info.name);
-			renderer.sprite = Sprite.Create(tex, new Rect(0, 0, 64, 64), new Vector2(0.0f, 1.0f));
-			Debug.Log(renderer.sprite);
+			var newSprite = Sprite.Create(tex, new Rect(0, 0, 64, 64), new Vector2(0.0f, 1.0f), 64.0f);
+			renderer.sprite = newSprite;
 		}
 	}
 
 	void CreateSquare(int x, int y, int id, string name)
 	{
-		var pos = new Vector3((float)x, (float)y, 0);
+		float xx = -8.0f + ((float)x / 64.0f);
+		float yy = 4.0f - ((float)y / 64.0f);
+		var pos = new Vector3(xx, yy, 0);
 
 		GameObject gob = GameObject.Instantiate(m_prefabs[id - 1]);
 		gob.name = name;
@@ -134,17 +135,8 @@ public class GridRenderer : MonoBehaviour {
 		int w = Screen.width;
 		int h = Screen.height;
 
-		m_zoom = System.Math.Min(w / (kSquarePixelSize * kGridWidth), h / (kSquarePixelSize * kGridHeight));
-
-		// Calculate the top-left and bottom-right coordinate of the screen in world coordinates
-		var bottomLeft = Camera.main.ViewportToWorldPoint(Vector3.zero);
-		var topRight = Camera.main.ViewportToWorldPoint(new Vector3 (1.0f, 1.0f, 0));
-
 		LoadLevel();
 
-		CreateSquare(0, 0, 1, "Test");
-
-		/*
 		for (int row = 0; row < kGridHeight; ++row)
 		{
 			for (int col = 0; col < kGridWidth; ++col)
@@ -153,21 +145,10 @@ public class GridRenderer : MonoBehaviour {
 
 				if (id != 0)
 				{
-					var pos = new Vector3(
-						(float)(col * kSquarePixelSize),
-						Screen.height - ((float)(row * kSquarePixelSize)),
-						0.0f);
-					var wpos = Camera.main.ScreenToWorldPoint(pos);
-					wpos.z = 0.0f;
-
-					GameObject gob = GameObject.Instantiate(m_prefabs[0]);
-					gob.name = string.Format("Sq:{0:D2}-{1:D2}", row, col);
-					gob.SetActive(true);
-					gob.transform.position = pos;
+					CreateSquare(64 * col, 64 * row, id, string.Format("Sq:{0:D2}-{1:D2}", row, col));
 				}
 			}	
 		}
-		*/
 	}
 	
 	// Update is called once per frame
