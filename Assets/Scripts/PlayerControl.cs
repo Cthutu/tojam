@@ -3,6 +3,8 @@ using System.Collections;
 
 public class PlayerControl : MonoBehaviour {
 
+	private bool moving = false;
+	private Vector3 target;
 	public float speed = 1.0f;
 	private Animator anim;
 
@@ -16,20 +18,81 @@ public class PlayerControl : MonoBehaviour {
 
 		float inputX = Input.GetAxis("Horizontal");
 		float inputY = Input.GetAxis("Vertical");
-	
-		Vector3 movement = new Vector3(inputX, inputY, 0.0f);
-		movement.Normalize();
-		movement *= Time.deltaTime * speed;
 
-		transform.Translate(movement);
-	}
+		if (!moving)
+		{
+			if (inputX != 0f || inputY != 0f)
+			{
+				// Started moving.
+				moving = true;
+				target = transform.position;
+				if (Mathf.Abs(inputX) > Mathf.Abs(inputY))
+				{
+					// Prefer horizontal movement.
+					if (inputX < 0.0f)
+					{
+						// Move left
+						target.x -= 1f;
+					}
+					else
+					{
+						target.x += 1f;
+					}
+				}
+				else
+				{
+					// Prefer vertical movement
+					if (inputY < 0f)
+					{
+						// Move down
+						target.y -= 1f;
+					}
+					else
+					{
+						// Move up
+						target.y += 1f;
+					}
+				}
+			}
+		}
 
-	void FixedUpdate()
-	{
-		float lastInputX = Input.GetAxis("Horizontal");
-		float lastInputY = Input.GetAxis("Vertical");
+		// Move to our target
+		if (moving)
+		{
+			Vector3 oldPos = transform.position;
+			Vector3 dir = target - oldPos;
 
-		anim.SetBool("Walking", lastInputX != 0.0f || lastInputY != 0.0f);
+			if (dir.sqrMagnitude != 0f)
+			{
+				dir.Normalize();
+				Vector3 movement = dir;
+				anim.SetFloat("SpeedX", dir.x);
+				anim.SetFloat("SpeedY", dir.y);
+				anim.SetFloat("LastMoveX", dir.x);
+				anim.SetFloat("LastMoveY", dir.y);
+				Debug.Log(dir);
+				anim.SetBool("Walking", true);
+
+				movement *= Time.deltaTime * speed;
+
+				Vector3 newPos = oldPos + movement;
+				
+				// Test to see if we've past the target
+				if ((target - oldPos).sqrMagnitude <= (newPos - oldPos).sqrMagnitude)
+				{
+					// We've reached (and passed?) the target.
+					newPos = target;
+					moving = false;
+					anim.SetFloat("SpeedX", 0f);
+					anim.SetFloat("SpeedY", 0f);
+					anim.SetFloat("LastMoveX", dir.x);
+					anim.SetFloat("LastMoveY", dir.y);
+					Debug.Log(dir);
+					anim.SetBool("Walking", false);
+				}
+				transform.position = newPos;
+			}
+		}
 	}
 
 }
