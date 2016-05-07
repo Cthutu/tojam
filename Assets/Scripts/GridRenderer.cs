@@ -7,7 +7,6 @@ public class GridRenderer : MonoBehaviour {
 
 	public TextAsset LevelFile;
 
-	private int m_zoom = 1;
 	private const int kGridWidth = 16;
 	private const int kGridHeight = 8;
 	private const int kSquarePixelSize = 64;
@@ -135,8 +134,6 @@ public class GridRenderer : MonoBehaviour {
 	void Start () {
 		int w = Screen.width;
 		int h = Screen.height;
-
-		m_zoom = System.Math.Min(w / (kSquarePixelSize * kGridWidth), h / (kSquarePixelSize * kGridHeight));
 
 		LoadLevel();
 

@@ -1,45 +1,45 @@
 fileFormatVersion: 2
 guid: c33638dff9df54705b2dcd2008190eab
-timeCreated: 1462640092
+timeCreated: 1462648742
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: man_0
-    21300002: man_1
-    21300004: man_2
-    21300006: man_3
-    21300008: man_4
-    21300010: man_5
-    21300012: man_6
-    21300014: man_7
-    21300016: man_8
-    21300018: man_9
-    21300020: man_10
-    21300022: man_11
-    21300024: man_12
-    21300026: man_13
-    21300028: man_14
-    21300030: man_15
-    21300032: man_16
-    21300034: man_17
-    21300036: man_18
-    21300038: man_19
-    21300040: man_20
-    21300042: man_21
-    21300044: man_22
-    21300046: man_23
-    21300048: man_24
-    21300050: man_25
-    21300052: man_26
-    21300054: man_27
-    21300056: man_28
-    21300058: man_29
-    21300060: man_30
-    21300062: man_31
-    21300064: man_32
-    21300066: man_33
-    21300068: man_34
-    21300070: man_35
+    21300000: idle_up
+    21300002: up_0
+    21300004: up_1
+    21300006: up_2
+    21300008: up_3
+    21300010: up_4
+    21300012: up_5
+    21300014: up_6
+    21300016: up_7
+    21300018: idle_left
+    21300020: left_0
+    21300022: left_1
+    21300024: left_2
+    21300026: left_3
+    21300028: left_4
+    21300030: left_5
+    21300032: left_6
+    21300034: left_7
+    21300036: idle_down
+    21300038: down_0
+    21300040: down_1
+    21300042: down_2
+    21300044: down_3
+    21300046: down_4
+    21300048: down_5
+    21300050: down_6
+    21300052: down_7
+    21300054: idle_right
+    21300056: right_0
+    21300058: right_1
+    21300060: right_2
+    21300062: right_3
+    21300064: right_4
+    21300066: right_5
+    21300068: right_6
+    21300070: right_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -86,7 +86,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: man_0
+    - name: idle_up
       rect:
         serializedVersion: 2
         x: 0
@@ -103,7 +103,7 @@ TextureImporter:
         - {x: 49, y: -59}
         - {x: 49, y: -29}
         - {x: 44, y: -13}
-    - name: man_1
+    - name: up_0
       rect:
         serializedVersion: 2
         x: 64
@@ -124,7 +124,7 @@ TextureImporter:
         - {x: 47, y: -61}
         - {x: 49, y: -58}
         - {x: 49, y: -31}
-    - name: man_2
+    - name: up_1
       rect:
         serializedVersion: 2
         x: 128
@@ -142,7 +142,7 @@ TextureImporter:
         - {x: 49, y: -64}
         - {x: 49, y: -15}
         - {x: 45, y: -13}
-    - name: man_3
+    - name: up_2
       rect:
         serializedVersion: 2
         x: 192
@@ -162,7 +162,7 @@ TextureImporter:
         - {x: 48, y: -56}
         - {x: 48, y: -31}
         - {x: 43, y: -14}
-    - name: man_4
+    - name: up_3
       rect:
         serializedVersion: 2
         x: 256
@@ -180,7 +180,7 @@ TextureImporter:
         - {x: 49, y: -64}
         - {x: 49, y: -15}
         - {x: 46, y: -13}
-    - name: man_5
+    - name: up_4
       rect:
         serializedVersion: 2
         x: 320
@@ -198,7 +198,7 @@ TextureImporter:
         - {x: 21, y: -63}
         - {x: 49, y: -63}
         - {x: 49, y: -13}
-    - name: man_6
+    - name: up_5
       rect:
         serializedVersion: 2
         x: 384
@@ -217,7 +217,7 @@ TextureImporter:
         - {x: 48, y: -62}
         - {x: 49, y: -55}
         - {x: 49, y: -13}
-    - name: man_7
+    - name: up_6
       rect:
         serializedVersion: 2
         x: 448
@@ -235,7 +235,7 @@ TextureImporter:
         - {x: 20, y: -64}
         - {x: 49, y: -64}
         - {x: 49, y: -14}
-    - name: man_8
+    - name: up_7
       rect:
         serializedVersion: 2
         x: 512
@@ -257,7 +257,7 @@ TextureImporter:
         - {x: 49, y: -53}
         - {x: 49, y: -36}
         - {x: 46, y: -19}
-    - name: man_9
+    - name: idle_left
       rect:
         serializedVersion: 2
         x: 0
@@ -275,7 +275,7 @@ TextureImporter:
         - {x: 45, y: -63}
         - {x: 45, y: -14}
         - {x: 40, y: -13}
-    - name: man_10
+    - name: left_0
       rect:
         serializedVersion: 2
         x: 64
@@ -298,7 +298,7 @@ TextureImporter:
         - {x: 44, y: -64}
         - {x: 46, y: -60}
         - {x: 46, y: -16}
-    - name: man_11
+    - name: left_1
       rect:
         serializedVersion: 2
         x: 128
@@ -315,7 +315,7 @@ TextureImporter:
         - {x: 41, y: -63}
         - {x: 45, y: -62}
         - {x: 45, y: -13}
-    - name: man_12
+    - name: left_2
       rect:
         serializedVersion: 2
         x: 192
@@ -334,7 +334,7 @@ TextureImporter:
         - {x: 47, y: -58}
         - {x: 47, y: -21}
         - {x: 45, y: -13}
-    - name: man_13
+    - name: left_3
       rect:
         serializedVersion: 2
         x: 256
@@ -353,7 +353,7 @@ TextureImporter:
         - {x: 48, y: -55}
         - {x: 48, y: -17}
         - {x: 39, y: -13}
-    - name: man_14
+    - name: left_4
       rect:
         serializedVersion: 2
         x: 320
@@ -372,7 +372,7 @@ TextureImporter:
         - {x: 41, y: -64}
         - {x: 50, y: -52}
         - {x: 50, y: -45}
-    - name: man_15
+    - name: left_5
       rect:
         serializedVersion: 2
         x: 384
@@ -394,7 +394,7 @@ TextureImporter:
         - {x: 48, y: -53}
         - {x: 48, y: -37}
         - {x: 46, y: -15}
-    - name: man_16
+    - name: left_6
       rect:
         serializedVersion: 2
         x: 448
@@ -414,7 +414,7 @@ TextureImporter:
         - {x: 47, y: -51}
         - {x: 47, y: -22}
         - {x: 46, y: -15}
-    - name: man_17
+    - name: left_7
       rect:
         serializedVersion: 2
         x: 512
@@ -431,7 +431,7 @@ TextureImporter:
         - {x: 46, y: -54}
         - {x: 46, y: -20}
         - {x: 43, y: -13}
-    - name: man_18
+    - name: idle_down
       rect:
         serializedVersion: 2
         x: 0
@@ -455,7 +455,7 @@ TextureImporter:
         - {x: 31, y: -60}
         - {x: 31, y: -56}
         - {x: 33, y: -60}
-    - name: man_19
+    - name: down_0
       rect:
         serializedVersion: 2
         x: 64
@@ -476,7 +476,7 @@ TextureImporter:
         - {x: 48, y: -58}
         - {x: 49, y: -53}
         - {x: 49, y: -30}
-    - name: man_20
+    - name: down_1
       rect:
         serializedVersion: 2
         x: 128
@@ -496,7 +496,7 @@ TextureImporter:
         - {x: 49, y: -56}
         - {x: 49, y: -29}
         - {x: 46, y: -15}
-    - name: man_21
+    - name: down_2
       rect:
         serializedVersion: 2
         x: 192
@@ -515,7 +515,7 @@ TextureImporter:
         - {x: 49, y: -56}
         - {x: 49, y: -28}
         - {x: 43, y: -18}
-    - name: man_22
+    - name: down_3
       rect:
         serializedVersion: 2
         x: 256
@@ -536,7 +536,7 @@ TextureImporter:
         - {x: 49, y: -56}
         - {x: 49, y: -24}
         - {x: 46, y: -15}
-    - name: man_23
+    - name: down_4
       rect:
         serializedVersion: 2
         x: 320
@@ -555,7 +555,7 @@ TextureImporter:
         - {x: 49, y: -57}
         - {x: 49, y: -28}
         - {x: 46, y: -15}
-    - name: man_24
+    - name: down_5
       rect:
         serializedVersion: 2
         x: 384
@@ -573,7 +573,7 @@ TextureImporter:
         - {x: 46, y: -64}
         - {x: 49, y: -58}
         - {x: 49, y: -18}
-    - name: man_25
+    - name: down_6
       rect:
         serializedVersion: 2
         x: 448
@@ -593,7 +593,7 @@ TextureImporter:
         - {x: 48, y: -58}
         - {x: 48, y: -19}
         - {x: 40, y: -14}
-    - name: man_26
+    - name: down_7
       rect:
         serializedVersion: 2
         x: 512
@@ -613,7 +613,7 @@ TextureImporter:
         - {x: 49, y: -59}
         - {x: 49, y: -17}
         - {x: 39, y: -13}
-    - name: man_27
+    - name: idle_right
       rect:
         serializedVersion: 2
         x: 0
@@ -632,7 +632,7 @@ TextureImporter:
         - {x: 43, y: -63}
         - {x: 43, y: -14}
         - {x: 41, y: -13}
-    - name: man_28
+    - name: right_0
       rect:
         serializedVersion: 2
         x: 64
@@ -650,7 +650,7 @@ TextureImporter:
         - {x: 47, y: -60}
         - {x: 47, y: -18}
         - {x: 39, y: -14}
-    - name: man_29
+    - name: right_1
       rect:
         serializedVersion: 2
         x: 128
@@ -667,7 +667,7 @@ TextureImporter:
         - {x: 45, y: -63}
         - {x: 45, y: -16}
         - {x: 39, y: -13}
-    - name: man_30
+    - name: right_2
       rect:
         serializedVersion: 2
         x: 192
@@ -684,7 +684,7 @@ TextureImporter:
         - {x: 43, y: -53}
         - {x: 43, y: -15}
         - {x: 38, y: -13}
-    - name: man_31
+    - name: right_3
       rect:
         serializedVersion: 2
         x: 256
@@ -702,7 +702,7 @@ TextureImporter:
         - {x: 40, y: -64}
         - {x: 44, y: -60}
         - {x: 44, y: -15}
-    - name: man_32
+    - name: right_4
       rect:
         serializedVersion: 2
         x: 320
@@ -722,7 +722,7 @@ TextureImporter:
         - {x: 46, y: -52}
         - {x: 46, y: -27}
         - {x: 45, y: -17}
-    - name: man_33
+    - name: right_5
       rect:
         serializedVersion: 2
         x: 384
@@ -742,7 +742,7 @@ TextureImporter:
         - {x: 43, y: -63}
         - {x: 43, y: -15}
         - {x: 37, y: -13}
-    - name: man_34
+    - name: right_6
       rect:
         serializedVersion: 2
         x: 448
@@ -761,7 +761,7 @@ TextureImporter:
         - {x: 43, y: -54}
         - {x: 43, y: -14}
         - {x: 41, y: -13}
-    - name: man_35
+    - name: right_7
       rect:
         serializedVersion: 2
         x: 512
