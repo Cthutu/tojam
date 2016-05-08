@@ -7,4 +7,5 @@ xxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxx
 .x............x.
 
-x default_floor coloured_floor
+x floor00 floor00_jam
+

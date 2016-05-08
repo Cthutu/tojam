@@ -159,9 +159,7 @@ public class GridRenderer : MonoBehaviour {
 		m_prefabs[id - 1] = gob;
 
 		SpriteRenderer renderer = gob.AddComponent<SpriteRenderer>();
-		Texture2D tex = Resources.Load<Texture2D>(name);
-		var newSprite = Sprite.Create(tex, new Rect(0, 0, kSquarePixelSize, kSquarePixelSize), new Vector2(0.0f, 1.0f), (float)kSquarePixelSize);
-		renderer.sprite = newSprite;
+		renderer.sprite = m_dictSprites[name];
 	}
 
 	void CreateSquare(int x, int y, int id, string name)
@@ -205,9 +203,19 @@ public class GridRenderer : MonoBehaviour {
     }
 
 	GameObject[] m_textPrefabs;
+	public Dictionary<string, Sprite> m_dictSprites = new Dictionary<string, Sprite>();
 
 	// Use this for initialization
 	void Start () {
+		// Load the floors
+		Sprite[] sprites = Resources.LoadAll<Sprite>("FloorSheet");
+		
+		foreach (Sprite sprite in sprites)
+		{
+			m_dictSprites.Add(sprite.name, sprite);
+		}
+
+		// Set up the text background tiles
 		m_textPrefabs = new GameObject[TextTiles.Length];
 		for (int i = 0; i < TextTiles.Length; ++i)
 		{
