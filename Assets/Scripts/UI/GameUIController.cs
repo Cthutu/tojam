@@ -9,8 +9,13 @@ public class GameUIController : MonoBehaviour {
 
     public float gameTimer = 300.0f; // in seconds
 
+    private AudioSource music;
+
 	// Use this for initialization
 	void Start () {
+        music = gameObject.AddComponent<AudioSource>();
+        music.clip = Resources.Load<AudioClip>("BGM/Intro");
+        music.Play();
         EnableGameMenu();
     }
 	
