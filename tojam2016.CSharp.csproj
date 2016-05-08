@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\DictionaryPropertyDrawer.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\GridRenderer.cs" />
+    <Compile Include="Assets\Scripts\MouseControl.cs" />
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\SerializeableDictionaryBase.cs" />
     <Compile Include="Assets\Scripts\StringUtil.cs" />
