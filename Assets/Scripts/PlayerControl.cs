@@ -8,6 +8,8 @@ public class PlayerControl : MonoBehaviour {
 	public float speed = 1.0f;
 	private Animator anim;
 	private int mapX = 8, mapY = 4;
+    private bool inputEnabled = false;
+    private int lives = 3;
 
 	Vector3 getWorldPosition()
 	{
@@ -28,10 +30,18 @@ public class PlayerControl : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		float inputX = Input.GetAxis("Horizontal");
+        GameManager gMan = GameManager.GetInstance();
+        if(gMan == null || gMan.levelLoaded == false)
+        {
+            return;
+        }
+
+        gMan.UpdatePlayerLives(lives);
+
+        float inputX = Input.GetAxis("Horizontal");
 		float inputY = Input.GetAxis("Vertical");
 
-		if (!moving)
+		if (!moving && inputEnabled)
 		{
 			if (inputX != 0f || inputY != 0f)
 			{
@@ -144,4 +154,8 @@ public class PlayerControl : MonoBehaviour {
 		}
 	}
 
+    public void EnablePlayerInput(bool _enabled)
+    {
+        inputEnabled = _enabled;
+    }
 }
