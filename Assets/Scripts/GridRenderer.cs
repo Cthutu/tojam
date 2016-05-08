@@ -17,6 +17,9 @@ public class GridRenderer : MonoBehaviour {
 
 	void LoadLevel(int _level)
 	{
+		m_numTiles = 0;
+		m_numTilesJammed = 0;
+
 		if(_level < 0 || LevelFiles.Count <= _level)
 		{
 			Debug.Log("GridRenderer.Loadlevel: _level out of bounds.");
@@ -29,6 +32,7 @@ public class GridRenderer : MonoBehaviour {
 		m_info = new Dictionary<char, SquareInfo> ();
 		m_indexToInfo = new Dictionary<int, SquareInfo>();
 		m_map = new int[kGridHeight, kGridWidth];
+		m_jammed = new bool[kGridHeight, kGridWidth];
 		int y = 0;
 
 		foreach (string line in lines) 
@@ -69,6 +73,7 @@ public class GridRenderer : MonoBehaviour {
 								info.colour_id = 0;
 							}
 							m_map[y, i] = id;
+							++m_numTiles;
 						}
 					}
 				}
@@ -255,6 +260,9 @@ public class GridRenderer : MonoBehaviour {
 	//
 
 	int[,] m_map;
+	bool[,] m_jammed;
+	int m_numTiles;
+	int m_numTilesJammed;
 
 	public int GetWorldId(int x, int y)
 	{
@@ -265,10 +273,22 @@ public class GridRenderer : MonoBehaviour {
 	{
 		SquareInfo info = m_indexToInfo[m_map[y, x]];
 		string name = GetTileName(x, y);
-		GameObject tile = GameObject.Find(name);
-		GameObject.Destroy(tile);
+		if (!m_jammed[y,x])
+		{
+			// Square can be jammed!
+			GameObject tile = GameObject.Find(name);
+			GameObject.Destroy(tile);
 
-		CreateSquare(x * kSquarePixelSize, y * kSquarePixelSize, info.colour_id, name);
+			CreateSquare(x * kSquarePixelSize, y * kSquarePixelSize, info.colour_id, name);
+
+			++m_numTilesJammed;
+			m_jammed[y, x] = true;
+
+			if (m_numTilesJammed == m_numTiles)
+			{
+				GameManager.GetInstance().MissionSuccess();
+			}
+		}
 	}
 
 
