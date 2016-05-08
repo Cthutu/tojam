@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: 8a7e2e3b2addc499aa8ea7e500c31b34
-timeCreated: 1462576406
+guid: e68337e61dbf64c84b26e62594b9b66d
+timeCreated: 1462723568
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: default_floor_0
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -27,7 +26,7 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -3
+  textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
     filterMode: 0
@@ -40,32 +39,17 @@ TextureImporter:
   compressionQuality: 50
   allowsAlphaSplitting: 0
   spriteMode: 1
-  spriteExtrude: 0
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 1
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 32
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: default_floor_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -64}
-        - {x: 64, y: -64}
-        - {x: 64, y: 0}
+    sprites: []
     outline: []
   spritePackingTag: 
   userData: 

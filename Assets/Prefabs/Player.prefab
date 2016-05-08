@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21227782}
   - 95: {fileID: 9507302}
   - 114: {fileID: 11497146}
+  - 114: {fileID: 11456088}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -47,6 +48,26 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11456088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 451eb74e2b4b4254b84812fc42ea57b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_eventClips:
+    _keys:
+    - footstep
+    - wallbump
+    - spreadjam
+    _values:
+    - {fileID: 8300000, guid: ce4b966df6dc0404a9dd344410ab9703, type: 3}
+    - {fileID: 8300000, guid: 54cd40528c31e354fb39749641209da9, type: 3}
+    - {fileID: 8300000, guid: b203fc9a328df714c8ec04997d2b2396, type: 3}
 --- !u!114 &11497146
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -85,7 +106,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300036, guid: c33638dff9df54705b2dcd2008190eab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c597ca9cab463d34ba7fe3bd21c6f67c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
