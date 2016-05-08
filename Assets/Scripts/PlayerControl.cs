@@ -48,6 +48,7 @@ public class PlayerControl : MonoBehaviour {
 						{
 							// Can't move left!
 							moving = false;
+                            OnHitWall();
 						}
 						else
 						{
@@ -62,8 +63,9 @@ public class PlayerControl : MonoBehaviour {
 						{
 							// Can't move right
 							moving = false;
-						}
-						else
+                            OnHitWall();
+                        }
+                        else
 						{
 							target.x += 1f;
 							++mapX;
@@ -79,8 +81,9 @@ public class PlayerControl : MonoBehaviour {
 						{
 							// Can't move down!
 							moving = false;
-						}
-						else
+                            OnHitWall();
+                        }
+                        else
 						{
 							target.y -= 1f;
 							++mapY;
@@ -93,8 +96,9 @@ public class PlayerControl : MonoBehaviour {
 						{
 							// Can't move up
 							moving = false;
-						}
-						else
+                            OnHitWall();
+                        }
+                        else
 						{
 							target.y += 1f;
 							--mapY;
@@ -143,5 +147,10 @@ public class PlayerControl : MonoBehaviour {
 			}
 		}
 	}
+
+    void OnHitWall()
+    {
+        GetComponent<ActorSounds>().TriggerSound("wallbump");
+    }
 
 }

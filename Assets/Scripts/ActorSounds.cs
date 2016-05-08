@@ -29,6 +29,12 @@ public class ActorSounds : MonoBehaviour {
 
     public void TriggerSound(string eventName)
     {
-        m_audioSources[eventName].Play();
+        AudioSource audioSource = m_audioSources[eventName];
+        if (eventName == "footstep")
+        {
+            audioSource.pitch = Random.Range(0.98f, 1.02f);
+            audioSource.volume = Random.Range(0.8f, 1.0f);
+        }
+        audioSource.Play();
     }
 }

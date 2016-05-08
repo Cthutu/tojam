@@ -132,6 +132,14 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11456088, guid: c785014666a204130a1c86115c497aa2, type: 2}
+      propertyPath: m_eventClips._keys.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456088, guid: c785014666a204130a1c86115c497aa2, type: 2}
+      propertyPath: m_eventClips._values.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 481668, guid: c785014666a204130a1c86115c497aa2, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -163,6 +171,14 @@ Prefab:
     - target: {fileID: 481668, guid: c785014666a204130a1c86115c497aa2, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456088, guid: c785014666a204130a1c86115c497aa2, type: 2}
+      propertyPath: m_eventClips._values.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 54cd40528c31e354fb39749641209da9, type: 3}
+    - target: {fileID: 11456088, guid: c785014666a204130a1c86115c497aa2, type: 2}
+      propertyPath: m_eventClips._keys.Array.data[1]
+      value: wallbump
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c785014666a204130a1c86115c497aa2, type: 2}
