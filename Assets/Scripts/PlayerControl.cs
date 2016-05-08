@@ -10,6 +10,7 @@ public class PlayerControl : MonoBehaviour {
 	private int mapX = 8, mapY = 4;
     private bool inputEnabled = false;
     private int lives = 3;
+    private bool wallHitKeyLatch = false;
 
 	Vector3 getWorldPosition()
 	{
@@ -40,6 +41,11 @@ public class PlayerControl : MonoBehaviour {
 
         float inputX = Input.GetAxis("Horizontal");
 		float inputY = Input.GetAxis("Vertical");
+
+        if (inputX == 0f && inputY == 0f)
+        {
+            wallHitKeyLatch = false;
+        }
 
 		if (!moving && inputEnabled)
 		{
@@ -152,7 +158,9 @@ public class PlayerControl : MonoBehaviour {
 					Debug.Log(dir);
 					anim.SetBool("Walking", false);
 					GameObject.Find("Grid").GetComponent<GridRenderer>().Colour(mapX, mapY);
-				}
+                    //TODO: Only trigger if tile is changed
+                    GetComponent<ActorSounds>().TriggerSound("spreadjam");
+                }
 				transform.position = newPos;
 			}
 		}
@@ -165,6 +173,10 @@ public class PlayerControl : MonoBehaviour {
 
     void OnHitWall()
     {
-        GetComponent<ActorSounds>().TriggerSound("wallbump");
+        if (!wallHitKeyLatch)
+        {
+            wallHitKeyLatch = true;
+            GetComponent<ActorSounds>().TriggerSound("wallbump");
+        }
     }
 }

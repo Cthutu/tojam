@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c597ca9cab463d34ba7fe3bd21c6f67c
-timeCreated: 1462681136
+timeCreated: 1462727494
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -96,7 +96,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 32
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
@@ -109,17 +109,17 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -8, y: 14}
-        - {x: -10, y: 12}
-        - {x: -10, y: -7}
-        - {x: -6, y: -16}
-        - {x: 9, y: -16}
-        - {x: 10, y: -8}
-        - {x: 10, y: 14}
+      - - {x: 8, y: -2}
+        - {x: 6, y: -4}
+        - {x: 6, y: -23}
+        - {x: 10, y: -32}
+        - {x: 25, y: -32}
+        - {x: 26, y: -24}
+        - {x: 26, y: -2}
     - name: JammySheet_1
       rect:
         serializedVersion: 2
@@ -127,17 +127,17 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -8, y: 13}
-        - {x: -10, y: 11}
-        - {x: -10, y: -8}
-        - {x: -6, y: -16}
-        - {x: 7, y: -16}
-        - {x: 10, y: -12}
-        - {x: 10, y: 13}
+      - - {x: 8, y: -3}
+        - {x: 6, y: -5}
+        - {x: 6, y: -24}
+        - {x: 10, y: -32}
+        - {x: 23, y: -32}
+        - {x: 26, y: -28}
+        - {x: 26, y: -3}
     - name: JammySheet_2
       rect:
         serializedVersion: 2
@@ -145,17 +145,17 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -8, y: 14}
-        - {x: -10, y: 12}
-        - {x: -10, y: -7}
-        - {x: -6, y: -16}
-        - {x: 9, y: -16}
-        - {x: 10, y: -8}
-        - {x: 10, y: 14}
+      - - {x: 8, y: -2}
+        - {x: 6, y: -4}
+        - {x: 6, y: -23}
+        - {x: 10, y: -32}
+        - {x: 25, y: -32}
+        - {x: 26, y: -24}
+        - {x: 26, y: -2}
     - name: JammySheet_3
       rect:
         serializedVersion: 2
@@ -163,17 +163,17 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -8, y: 13}
-        - {x: -10, y: 11}
-        - {x: -10, y: -8}
-        - {x: -6, y: -16}
-        - {x: 7, y: -16}
-        - {x: 10, y: -12}
-        - {x: 10, y: 13}
+      - - {x: 8, y: -3}
+        - {x: 6, y: -5}
+        - {x: 6, y: -24}
+        - {x: 10, y: -32}
+        - {x: 23, y: -32}
+        - {x: 26, y: -28}
+        - {x: 26, y: -3}
     - name: JammySheet_4
       rect:
         serializedVersion: 2
@@ -181,17 +181,17 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 8, y: 14}
-        - {x: -10, y: 14}
-        - {x: -10, y: -11}
-        - {x: -9, y: -16}
-        - {x: 3, y: -16}
-        - {x: 10, y: -8}
-        - {x: 10, y: 12}
+      - - {x: 24, y: -2}
+        - {x: 6, y: -2}
+        - {x: 6, y: -27}
+        - {x: 7, y: -32}
+        - {x: 19, y: -32}
+        - {x: 26, y: -24}
+        - {x: 26, y: -4}
     - name: JammySheet_5
       rect:
         serializedVersion: 2
@@ -199,16 +199,16 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -10, y: -14}
-        - {x: -8, y: -16}
-        - {x: 6, y: -16}
-        - {x: 10, y: -13}
-        - {x: 10, y: 13}
-        - {x: -10, y: 13}
+      - - {x: 6, y: -30}
+        - {x: 8, y: -32}
+        - {x: 22, y: -32}
+        - {x: 26, y: -29}
+        - {x: 26, y: -3}
+        - {x: 6, y: -3}
     - name: JammySheet_6
       rect:
         serializedVersion: 2
@@ -216,17 +216,17 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 8, y: 14}
-        - {x: -10, y: 14}
-        - {x: -10, y: -11}
-        - {x: -9, y: -16}
-        - {x: 3, y: -16}
-        - {x: 10, y: -8}
-        - {x: 10, y: 12}
+      - - {x: 24, y: -2}
+        - {x: 6, y: -2}
+        - {x: 6, y: -27}
+        - {x: 7, y: -32}
+        - {x: 19, y: -32}
+        - {x: 26, y: -24}
+        - {x: 26, y: -4}
     - name: JammySheet_7
       rect:
         serializedVersion: 2
@@ -234,16 +234,16 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -10, y: -14}
-        - {x: -8, y: -16}
-        - {x: 6, y: -16}
-        - {x: 10, y: -13}
-        - {x: 10, y: 13}
-        - {x: -10, y: 13}
+      - - {x: 6, y: -30}
+        - {x: 8, y: -32}
+        - {x: 22, y: -32}
+        - {x: 26, y: -29}
+        - {x: 26, y: -3}
+        - {x: 6, y: -3}
     - name: JammySheet_8
       rect:
         serializedVersion: 2
@@ -251,16 +251,16 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -10, y: -12}
-        - {x: -8, y: -16}
-        - {x: 4, y: -16}
-        - {x: 10, y: -13}
-        - {x: 10, y: 14}
-        - {x: -10, y: 14}
+      - - {x: 6, y: -28}
+        - {x: 8, y: -32}
+        - {x: 20, y: -32}
+        - {x: 26, y: -29}
+        - {x: 26, y: -2}
+        - {x: 6, y: -2}
     - name: JammySheet_9
       rect:
         serializedVersion: 2
@@ -268,17 +268,17 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -8, y: 13}
-        - {x: -10, y: 11}
-        - {x: -10, y: -8}
-        - {x: -6, y: -16}
-        - {x: 7, y: -16}
-        - {x: 10, y: -12}
-        - {x: 10, y: 13}
+      - - {x: 8, y: -3}
+        - {x: 6, y: -5}
+        - {x: 6, y: -24}
+        - {x: 10, y: -32}
+        - {x: 23, y: -32}
+        - {x: 26, y: -28}
+        - {x: 26, y: -3}
     - name: JammySheet_10
       rect:
         serializedVersion: 2
@@ -286,17 +286,17 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -10, y: 14}
-        - {x: -10, y: -13}
-        - {x: -6, y: -16}
-        - {x: 8, y: -16}
-        - {x: 10, y: -12}
-        - {x: 10, y: 12}
-        - {x: 8, y: 14}
+      - - {x: 6, y: -2}
+        - {x: 6, y: -29}
+        - {x: 10, y: -32}
+        - {x: 24, y: -32}
+        - {x: 26, y: -28}
+        - {x: 26, y: -4}
+        - {x: 24, y: -2}
     - name: JammySheet_11
       rect:
         serializedVersion: 2
@@ -304,17 +304,17 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -8, y: 13}
-        - {x: -10, y: 11}
-        - {x: -10, y: -8}
-        - {x: -6, y: -16}
-        - {x: 7, y: -16}
-        - {x: 10, y: -12}
-        - {x: 10, y: 13}
+      - - {x: 8, y: -3}
+        - {x: 6, y: -5}
+        - {x: 6, y: -24}
+        - {x: 10, y: -32}
+        - {x: 23, y: -32}
+        - {x: 26, y: -28}
+        - {x: 26, y: -3}
     - name: JammySheet_12
       rect:
         serializedVersion: 2
@@ -322,18 +322,18 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 8, y: 14}
-        - {x: -8, y: 14}
-        - {x: -10, y: 12}
-        - {x: -10, y: -7}
-        - {x: -5, y: -16}
-        - {x: 6, y: -16}
-        - {x: 11, y: -9}
-        - {x: 11, y: 13}
+      - - {x: 24, y: -2}
+        - {x: 8, y: -2}
+        - {x: 6, y: -4}
+        - {x: 6, y: -23}
+        - {x: 11, y: -32}
+        - {x: 22, y: -32}
+        - {x: 27, y: -25}
+        - {x: 27, y: -3}
     - name: JammySheet_13
       rect:
         serializedVersion: 2
@@ -341,17 +341,17 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -8, y: 13}
-        - {x: -10, y: 11}
-        - {x: -10, y: -8}
-        - {x: -6, y: -16}
-        - {x: 7, y: -16}
-        - {x: 10, y: -12}
-        - {x: 10, y: 13}
+      - - {x: 8, y: -3}
+        - {x: 6, y: -5}
+        - {x: 6, y: -24}
+        - {x: 10, y: -32}
+        - {x: 23, y: -32}
+        - {x: 26, y: -28}
+        - {x: 26, y: -3}
     - name: JammySheet_14
       rect:
         serializedVersion: 2
@@ -359,17 +359,17 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -11, y: -13}
-        - {x: -9, y: -16}
-        - {x: 4, y: -16}
-        - {x: 10, y: -13}
-        - {x: 10, y: 14}
-        - {x: -10, y: 14}
-        - {x: -11, y: 8}
+      - - {x: 5, y: -29}
+        - {x: 7, y: -32}
+        - {x: 20, y: -32}
+        - {x: 26, y: -29}
+        - {x: 26, y: -2}
+        - {x: 6, y: -2}
+        - {x: 5, y: -8}
     - name: JammySheet_15
       rect:
         serializedVersion: 2
@@ -377,17 +377,17 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -8, y: 13}
-        - {x: -10, y: 11}
-        - {x: -10, y: -8}
-        - {x: -6, y: -16}
-        - {x: 7, y: -16}
-        - {x: 10, y: -12}
-        - {x: 10, y: 13}
+      - - {x: 8, y: -3}
+        - {x: 6, y: -5}
+        - {x: 6, y: -24}
+        - {x: 10, y: -32}
+        - {x: 23, y: -32}
+        - {x: 26, y: -28}
+        - {x: 26, y: -3}
     - name: JammySheet_16
       rect:
         serializedVersion: 2
@@ -395,16 +395,16 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -10, y: 14}
-        - {x: -10, y: -9}
-        - {x: -8, y: -16}
-        - {x: 4, y: -16}
-        - {x: 10, y: -11}
-        - {x: 10, y: 14}
+      - - {x: 6, y: -2}
+        - {x: 6, y: -25}
+        - {x: 8, y: -32}
+        - {x: 20, y: -32}
+        - {x: 26, y: -27}
+        - {x: 26, y: -2}
     - name: JammySheet_17
       rect:
         serializedVersion: 2
@@ -412,16 +412,16 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -10, y: 13}
-        - {x: -10, y: -13}
-        - {x: -8, y: -16}
-        - {x: 9, y: -16}
-        - {x: 10, y: -14}
-        - {x: 10, y: 13}
+      - - {x: 6, y: -3}
+        - {x: 6, y: -29}
+        - {x: 8, y: -32}
+        - {x: 25, y: -32}
+        - {x: 26, y: -30}
+        - {x: 26, y: -3}
     - name: JammySheet_18
       rect:
         serializedVersion: 2
@@ -429,20 +429,20 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 8, y: 14}
-        - {x: -7, y: 15}
-        - {x: -10, y: 15}
-        - {x: -11, y: 13}
-        - {x: -11, y: 11}
-        - {x: -10, y: -7}
-        - {x: -5, y: -16}
-        - {x: 3, y: -16}
-        - {x: 10, y: -9}
-        - {x: 10, y: 12}
+      - - {x: 24, y: -2}
+        - {x: 9, y: -1}
+        - {x: 6, y: -1}
+        - {x: 5, y: -3}
+        - {x: 5, y: -5}
+        - {x: 6, y: -23}
+        - {x: 11, y: -32}
+        - {x: 19, y: -32}
+        - {x: 26, y: -25}
+        - {x: 26, y: -4}
     - name: JammySheet_19
       rect:
         serializedVersion: 2
@@ -450,17 +450,17 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -10, y: 15}
-        - {x: -16, y: 12}
-        - {x: -16, y: -7}
-        - {x: -12, y: -16}
-        - {x: 10, y: -16}
-        - {x: 10, y: 13}
-        - {x: -2, y: 15}
+      - - {x: 6, y: -1}
+        - {x: 0, y: -4}
+        - {x: 0, y: -23}
+        - {x: 4, y: -32}
+        - {x: 26, y: -32}
+        - {x: 26, y: -3}
+        - {x: 14, y: -1}
     - name: JammySheet_20
       rect:
         serializedVersion: 2
@@ -468,18 +468,18 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -8, y: 14}
-        - {x: -10, y: 12}
-        - {x: -10, y: -7}
-        - {x: -3, y: -16}
-        - {x: 5, y: -16}
-        - {x: 10, y: -7}
-        - {x: 10, y: 12}
-        - {x: 8, y: 14}
+      - - {x: 8, y: -2}
+        - {x: 6, y: -4}
+        - {x: 6, y: -23}
+        - {x: 13, y: -32}
+        - {x: 21, y: -32}
+        - {x: 26, y: -23}
+        - {x: 26, y: -4}
+        - {x: 24, y: -2}
     - name: JammySheet_21
       rect:
         serializedVersion: 2
@@ -487,17 +487,17 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 8, y: 13}
-        - {x: -10, y: 13}
-        - {x: -10, y: -14}
-        - {x: -8, y: -16}
-        - {x: 8, y: -16}
-        - {x: 10, y: -13}
-        - {x: 10, y: 11}
+      - - {x: 24, y: -3}
+        - {x: 6, y: -3}
+        - {x: 6, y: -30}
+        - {x: 8, y: -32}
+        - {x: 24, y: -32}
+        - {x: 26, y: -29}
+        - {x: 26, y: -5}
     - name: JammySheet_22
       rect:
         serializedVersion: 2
@@ -505,18 +505,18 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -4, y: 15}
-        - {x: -10, y: 14}
-        - {x: -10, y: -7}
-        - {x: -3, y: -16}
-        - {x: 5, y: -16}
-        - {x: 10, y: -7}
-        - {x: 11, y: 1}
-        - {x: 11, y: 15}
+      - - {x: 12, y: -1}
+        - {x: 6, y: -2}
+        - {x: 6, y: -23}
+        - {x: 13, y: -32}
+        - {x: 21, y: -32}
+        - {x: 26, y: -23}
+        - {x: 27, y: -15}
+        - {x: 27, y: -1}
     - name: JammySheet_23
       rect:
         serializedVersion: 2
@@ -524,18 +524,18 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -2, y: 15}
-        - {x: -10, y: 12}
-        - {x: -10, y: -12}
-        - {x: -8, y: -16}
-        - {x: 12, y: -16}
-        - {x: 16, y: -6}
-        - {x: 16, y: 14}
-        - {x: 14, y: 15}
+      - - {x: 14, y: -1}
+        - {x: 6, y: -4}
+        - {x: 6, y: -28}
+        - {x: 8, y: -32}
+        - {x: 28, y: -32}
+        - {x: 32, y: -22}
+        - {x: 32, y: -2}
+        - {x: 30, y: -1}
     - name: JammySheet_24
       rect:
         serializedVersion: 2
@@ -543,16 +543,16 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -10, y: -12}
-        - {x: -8, y: -16}
-        - {x: 4, y: -16}
-        - {x: 10, y: -13}
-        - {x: 10, y: 14}
-        - {x: -10, y: 14}
+      - - {x: 6, y: -28}
+        - {x: 8, y: -32}
+        - {x: 20, y: -32}
+        - {x: 26, y: -29}
+        - {x: 26, y: -2}
+        - {x: 6, y: -2}
     - name: JammySheet_25
       rect:
         serializedVersion: 2
@@ -560,17 +560,17 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -8, y: 13}
-        - {x: -10, y: 11}
-        - {x: -10, y: -8}
-        - {x: -6, y: -16}
-        - {x: 7, y: -16}
-        - {x: 10, y: -12}
-        - {x: 10, y: 13}
+      - - {x: 8, y: -3}
+        - {x: 6, y: -5}
+        - {x: 6, y: -24}
+        - {x: 10, y: -32}
+        - {x: 23, y: -32}
+        - {x: 26, y: -28}
+        - {x: 26, y: -3}
     - name: JammySheet_26
       rect:
         serializedVersion: 2
@@ -578,17 +578,17 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -10, y: 14}
-        - {x: -10, y: -13}
-        - {x: -6, y: -16}
-        - {x: 8, y: -16}
-        - {x: 10, y: -12}
-        - {x: 10, y: 12}
-        - {x: 8, y: 14}
+      - - {x: 6, y: -2}
+        - {x: 6, y: -29}
+        - {x: 10, y: -32}
+        - {x: 24, y: -32}
+        - {x: 26, y: -28}
+        - {x: 26, y: -4}
+        - {x: 24, y: -2}
     - name: JammySheet_27
       rect:
         serializedVersion: 2
@@ -596,17 +596,17 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -8, y: 13}
-        - {x: -10, y: 11}
-        - {x: -10, y: -8}
-        - {x: -6, y: -16}
-        - {x: 7, y: -16}
-        - {x: 10, y: -12}
-        - {x: 10, y: 13}
+      - - {x: 8, y: -3}
+        - {x: 6, y: -5}
+        - {x: 6, y: -24}
+        - {x: 10, y: -32}
+        - {x: 23, y: -32}
+        - {x: 26, y: -28}
+        - {x: 26, y: -3}
     - name: JammySheet_28
       rect:
         serializedVersion: 2
@@ -614,16 +614,16 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -10, y: 14}
-        - {x: -10, y: -9}
-        - {x: -8, y: -16}
-        - {x: 4, y: -16}
-        - {x: 10, y: -11}
-        - {x: 10, y: 14}
+      - - {x: 6, y: -2}
+        - {x: 6, y: -25}
+        - {x: 8, y: -32}
+        - {x: 20, y: -32}
+        - {x: 26, y: -27}
+        - {x: 26, y: -2}
     - name: JammySheet_29
       rect:
         serializedVersion: 2
@@ -631,16 +631,16 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -10, y: 13}
-        - {x: -10, y: -13}
-        - {x: -8, y: -16}
-        - {x: 9, y: -16}
-        - {x: 10, y: -14}
-        - {x: 10, y: 13}
+      - - {x: 6, y: -3}
+        - {x: 6, y: -29}
+        - {x: 8, y: -32}
+        - {x: 25, y: -32}
+        - {x: 26, y: -30}
+        - {x: 26, y: -3}
     - name: JammySheet_30
       rect:
         serializedVersion: 2
@@ -648,20 +648,20 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 8, y: 14}
-        - {x: -7, y: 15}
-        - {x: -10, y: 15}
-        - {x: -11, y: 13}
-        - {x: -11, y: 11}
-        - {x: -10, y: -7}
-        - {x: -5, y: -16}
-        - {x: 3, y: -16}
-        - {x: 10, y: -9}
-        - {x: 10, y: 12}
+      - - {x: 24, y: -2}
+        - {x: 9, y: -1}
+        - {x: 6, y: -1}
+        - {x: 5, y: -3}
+        - {x: 5, y: -5}
+        - {x: 6, y: -23}
+        - {x: 11, y: -32}
+        - {x: 19, y: -32}
+        - {x: 26, y: -25}
+        - {x: 26, y: -4}
     - name: JammySheet_31
       rect:
         serializedVersion: 2
@@ -669,17 +669,17 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -10, y: 15}
-        - {x: -16, y: 12}
-        - {x: -16, y: -7}
-        - {x: -12, y: -16}
-        - {x: 10, y: -16}
-        - {x: 10, y: 13}
-        - {x: -2, y: 15}
+      - - {x: 6, y: -1}
+        - {x: 0, y: -4}
+        - {x: 0, y: -23}
+        - {x: 4, y: -32}
+        - {x: 26, y: -32}
+        - {x: 26, y: -3}
+        - {x: 14, y: -1}
     - name: JammySheet_32
       rect:
         serializedVersion: 2
@@ -687,18 +687,18 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -8, y: 14}
-        - {x: -10, y: 12}
-        - {x: -10, y: -7}
-        - {x: -3, y: -16}
-        - {x: 5, y: -16}
-        - {x: 10, y: -7}
-        - {x: 10, y: 12}
-        - {x: 8, y: 14}
+      - - {x: 8, y: -2}
+        - {x: 6, y: -4}
+        - {x: 6, y: -23}
+        - {x: 13, y: -32}
+        - {x: 21, y: -32}
+        - {x: 26, y: -23}
+        - {x: 26, y: -4}
+        - {x: 24, y: -2}
     - name: JammySheet_33
       rect:
         serializedVersion: 2
@@ -706,17 +706,17 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 8, y: 13}
-        - {x: -10, y: 13}
-        - {x: -10, y: -14}
-        - {x: -8, y: -16}
-        - {x: 8, y: -16}
-        - {x: 10, y: -13}
-        - {x: 10, y: 11}
+      - - {x: 24, y: -3}
+        - {x: 6, y: -3}
+        - {x: 6, y: -30}
+        - {x: 8, y: -32}
+        - {x: 24, y: -32}
+        - {x: 26, y: -29}
+        - {x: 26, y: -5}
     - name: JammySheet_34
       rect:
         serializedVersion: 2
@@ -724,18 +724,18 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -4, y: 15}
-        - {x: -10, y: 14}
-        - {x: -10, y: -7}
-        - {x: -3, y: -16}
-        - {x: 5, y: -16}
-        - {x: 10, y: -7}
-        - {x: 11, y: 1}
-        - {x: 11, y: 15}
+      - - {x: 12, y: -1}
+        - {x: 6, y: -2}
+        - {x: 6, y: -23}
+        - {x: 13, y: -32}
+        - {x: 21, y: -32}
+        - {x: 26, y: -23}
+        - {x: 27, y: -15}
+        - {x: 27, y: -1}
     - name: JammySheet_35
       rect:
         serializedVersion: 2
@@ -743,18 +743,18 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -2, y: 15}
-        - {x: -10, y: 12}
-        - {x: -10, y: -12}
-        - {x: -8, y: -16}
-        - {x: 12, y: -16}
-        - {x: 16, y: -6}
-        - {x: 16, y: 14}
-        - {x: 14, y: 15}
+      - - {x: 14, y: -1}
+        - {x: 6, y: -4}
+        - {x: 6, y: -28}
+        - {x: 8, y: -32}
+        - {x: 28, y: -32}
+        - {x: 32, y: -22}
+        - {x: 32, y: -2}
+        - {x: 30, y: -1}
     - name: JammySheet_36
       rect:
         serializedVersion: 2
@@ -762,17 +762,17 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -8, y: 15}
-        - {x: -10, y: 13}
-        - {x: -10, y: -6}
-        - {x: -6, y: -15}
-        - {x: 6, y: -15}
-        - {x: 10, y: -10}
-        - {x: 10, y: 15}
+      - - {x: 8, y: -1}
+        - {x: 6, y: -3}
+        - {x: 6, y: -22}
+        - {x: 10, y: -31}
+        - {x: 22, y: -31}
+        - {x: 26, y: -26}
+        - {x: 26, y: -1}
     - name: JammySheet_37
       rect:
         serializedVersion: 2
@@ -780,17 +780,17 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -15, y: 6}
-        - {x: -15, y: -5}
-        - {x: -10, y: -10}
-        - {x: 15, y: -10}
-        - {x: 15, y: 8}
-        - {x: 13, y: 10}
-        - {x: -6, y: 10}
+      - - {x: 1, y: -10}
+        - {x: 1, y: -21}
+        - {x: 6, y: -26}
+        - {x: 31, y: -26}
+        - {x: 31, y: -8}
+        - {x: 29, y: -6}
+        - {x: 10, y: -6}
     - name: JammySheet_38
       rect:
         serializedVersion: 2
@@ -798,16 +798,16 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -5, y: 15}
-        - {x: -10, y: 8}
-        - {x: -10, y: -15}
-        - {x: 10, y: -15}
-        - {x: 10, y: 6}
-        - {x: 6, y: 15}
+      - - {x: 11, y: -1}
+        - {x: 6, y: -8}
+        - {x: 6, y: -31}
+        - {x: 26, y: -31}
+        - {x: 26, y: -10}
+        - {x: 22, y: -1}
     - name: JammySheet_39
       rect:
         serializedVersion: 2
@@ -815,16 +815,16 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -15, y: 10}
-        - {x: -15, y: -10}
-        - {x: 6, y: -10}
-        - {x: 15, y: -6}
-        - {x: 15, y: 5}
-        - {x: 7, y: 10}
+      - - {x: 1, y: -6}
+        - {x: 1, y: -26}
+        - {x: 22, y: -26}
+        - {x: 31, y: -22}
+        - {x: 31, y: -11}
+        - {x: 23, y: -6}
     - name: JammySheet_40
       rect:
         serializedVersion: 2
@@ -832,17 +832,17 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -8, y: 15}
-        - {x: -10, y: 13}
-        - {x: -10, y: -6}
-        - {x: -6, y: -15}
-        - {x: 6, y: -15}
-        - {x: 10, y: -10}
-        - {x: 10, y: 15}
+      - - {x: 8, y: -1}
+        - {x: 6, y: -3}
+        - {x: 6, y: -22}
+        - {x: 10, y: -31}
+        - {x: 22, y: -31}
+        - {x: 26, y: -26}
+        - {x: 26, y: -1}
     - name: JammySheet_41
       rect:
         serializedVersion: 2
@@ -850,17 +850,17 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -15, y: 6}
-        - {x: -15, y: -5}
-        - {x: -10, y: -10}
-        - {x: 15, y: -10}
-        - {x: 15, y: 8}
-        - {x: 13, y: 10}
-        - {x: -6, y: 10}
+      - - {x: 1, y: -10}
+        - {x: 1, y: -21}
+        - {x: 6, y: -26}
+        - {x: 31, y: -26}
+        - {x: 31, y: -8}
+        - {x: 29, y: -6}
+        - {x: 10, y: -6}
     - name: JammySheet_42
       rect:
         serializedVersion: 2
@@ -868,16 +868,16 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -5, y: 15}
-        - {x: -10, y: 8}
-        - {x: -10, y: -15}
-        - {x: 10, y: -15}
-        - {x: 10, y: 6}
-        - {x: 6, y: 15}
+      - - {x: 11, y: -1}
+        - {x: 6, y: -8}
+        - {x: 6, y: -31}
+        - {x: 26, y: -31}
+        - {x: 26, y: -10}
+        - {x: 22, y: -1}
     - name: JammySheet_43
       rect:
         serializedVersion: 2
@@ -885,18 +885,18 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -13, y: 10}
-        - {x: -16, y: 9}
-        - {x: -16, y: -14}
-        - {x: -14, y: -16}
-        - {x: 1, y: -16}
-        - {x: 15, y: -9}
-        - {x: 15, y: 6}
-        - {x: 11, y: 10}
+      - - {x: 3, y: -6}
+        - {x: 0, y: -7}
+        - {x: 0, y: -30}
+        - {x: 2, y: -32}
+        - {x: 17, y: -32}
+        - {x: 31, y: -25}
+        - {x: 31, y: -10}
+        - {x: 27, y: -6}
     - name: JammySheet_44
       rect:
         serializedVersion: 2
@@ -904,16 +904,16 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -3, y: 14}
-        - {x: -3, y: -12}
-        - {x: 0, y: -16}
-        - {x: 11, y: -16}
-        - {x: 16, y: -12}
-        - {x: 16, y: 14}
+      - - {x: 13, y: -2}
+        - {x: 13, y: -28}
+        - {x: 16, y: -32}
+        - {x: 27, y: -32}
+        - {x: 32, y: -28}
+        - {x: 32, y: -2}
     - name: JammySheet_45
       rect:
         serializedVersion: 2
@@ -921,16 +921,16 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -5, y: 13}
-        - {x: -5, y: -13}
-        - {x: -2, y: -16}
-        - {x: 11, y: -16}
-        - {x: 15, y: -13}
-        - {x: 15, y: 13}
+      - - {x: 11, y: -3}
+        - {x: 11, y: -29}
+        - {x: 14, y: -32}
+        - {x: 27, y: -32}
+        - {x: 31, y: -29}
+        - {x: 31, y: -3}
     - name: JammySheet_46
       rect:
         serializedVersion: 2
@@ -938,17 +938,17 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -7, y: 14}
-        - {x: -7, y: -15}
-        - {x: -6, y: -16}
-        - {x: 9, y: -16}
-        - {x: 13, y: -7}
-        - {x: 13, y: 12}
-        - {x: 11, y: 14}
+      - - {x: 9, y: -2}
+        - {x: 9, y: -31}
+        - {x: 10, y: -32}
+        - {x: 25, y: -32}
+        - {x: 29, y: -23}
+        - {x: 29, y: -4}
+        - {x: 27, y: -2}
     - name: JammySheet_47
       rect:
         serializedVersion: 2
@@ -956,16 +956,16 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -9, y: 13}
-        - {x: -9, y: -16}
-        - {x: 4, y: -16}
-        - {x: 11, y: -8}
-        - {x: 11, y: 11}
-        - {x: 9, y: 13}
+      - - {x: 7, y: -3}
+        - {x: 7, y: -32}
+        - {x: 20, y: -32}
+        - {x: 27, y: -24}
+        - {x: 27, y: -5}
+        - {x: 25, y: -3}
     - name: JammySheet_48
       rect:
         serializedVersion: 2
@@ -973,16 +973,16 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -11, y: -12}
-        - {x: -7, y: -16}
-        - {x: 2, y: -16}
-        - {x: 9, y: -12}
-        - {x: 9, y: 14}
-        - {x: -11, y: 14}
+      - - {x: 5, y: -28}
+        - {x: 9, y: -32}
+        - {x: 18, y: -32}
+        - {x: 25, y: -28}
+        - {x: 25, y: -2}
+        - {x: 5, y: -2}
     - name: JammySheet_49
       rect:
         serializedVersion: 2
@@ -990,18 +990,18 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 8, y: 14}
-        - {x: -8, y: 14}
-        - {x: -10, y: 12}
-        - {x: -10, y: -7}
-        - {x: -5, y: -16}
-        - {x: 6, y: -16}
-        - {x: 11, y: -9}
-        - {x: 11, y: 13}
+      - - {x: 24, y: -2}
+        - {x: 8, y: -2}
+        - {x: 6, y: -4}
+        - {x: 6, y: -23}
+        - {x: 11, y: -32}
+        - {x: 22, y: -32}
+        - {x: 27, y: -25}
+        - {x: 27, y: -3}
     - name: JammySheet_50
       rect:
         serializedVersion: 2
@@ -1009,16 +1009,16 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -10, y: 14}
-        - {x: -10, y: -11}
-        - {x: -5, y: -16}
-        - {x: 8, y: -16}
-        - {x: 10, y: -7}
-        - {x: 10, y: 14}
+      - - {x: 6, y: -2}
+        - {x: 6, y: -27}
+        - {x: 11, y: -32}
+        - {x: 24, y: -32}
+        - {x: 26, y: -23}
+        - {x: 26, y: -2}
     - name: JammySheet_51
       rect:
         serializedVersion: 2
@@ -1026,16 +1026,16 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 9, y: 14}
-        - {x: -16, y: 14}
-        - {x: -16, y: 1}
-        - {x: -10, y: -16}
-        - {x: 11, y: -16}
-        - {x: 11, y: 12}
+      - - {x: 25, y: -2}
+        - {x: 0, y: -2}
+        - {x: 0, y: -15}
+        - {x: 6, y: -32}
+        - {x: 27, y: -32}
+        - {x: 27, y: -4}
     outline: []
   spritePackingTag: 
   userData: 
