@@ -138,7 +138,6 @@ public class PlayerControl : MonoBehaviour {
 				anim.SetFloat("SpeedY", dir.y);
 				anim.SetFloat("LastMoveX", dir.x);
 				anim.SetFloat("LastMoveY", dir.y);
-				Debug.Log(dir);
 				anim.SetBool("Walking", true);
 
 				movement *= Time.deltaTime * speed;
@@ -155,7 +154,6 @@ public class PlayerControl : MonoBehaviour {
 					anim.SetFloat("SpeedY", 0f);
 					anim.SetFloat("LastMoveX", dir.x);
 					anim.SetFloat("LastMoveY", dir.y);
-					Debug.Log(dir);
 					anim.SetBool("Walking", false);
 					GameObject.Find("Grid").GetComponent<GridRenderer>().Colour(mapX, mapY);
                     //TODO: Only trigger if tile is changed
