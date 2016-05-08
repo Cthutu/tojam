@@ -1,0 +1,13 @@
+15,0
+xxxxxxxxxxxxxxxx
+.xxxxxxxxxxxxxx.
+.x....xxxx....x.
+.x..xxx..xxx..x.
+.x..xxx..xxx..x.
+.x....xxxx....x.
+.xxxxxxxxxxxxxx.
+xxxxxxxxxxxxxxxx
+
+x floor01 floor01_jam
+
+

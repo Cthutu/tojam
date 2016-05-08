@@ -1,0 +1,12 @@
+6,7
+xx..xxx..xxx..xx
+xxxxxxx..xxxxxxx
+xx..xxx..xxx..xx
+xx..xxxxxxxx..xx
+xx..xxxxxxxx..xx
+xx..xxx..xxx..xx
+xxxxxxx..xxxxxxx
+xx..xxx..xxx..xx
+
+x floor03 floor03_jam
+

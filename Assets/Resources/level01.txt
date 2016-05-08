@@ -1,11 +1,13 @@
-.x............x.
-xxxxxxxxxxxxxxxx
-.x.....xx.....x.
-.x..xxxxxxxx..x.
-.x..xxxxxxxx..x.
-.x.....xx..x..x.
-xxxxxxxxxxxxxxxx
-.x............x.
+1,0
+................
+.xxxxxxxxxxxxxx.
+.xx...xxxx...xx.
+.xx.xxxxxxxx.xx.
+.xx.xxxxxxxx.xx.
+.xx...xxxx...xx.
+.xxxxxxxxxxxxxx.
+................
 
 x floor00 floor00_jam
+
 
