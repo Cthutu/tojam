@@ -7,6 +7,17 @@ public class GameUIController : MonoBehaviour {
     public List<GameObject> gameUiComponents;
     public List<GameObject> gameMenuComponents;
 
+	public enum StateType
+	{
+		Menu,
+		Game
+	};
+
+	public StateType State {
+		get;
+		private set;
+	}
+
     public float gameTimer = 300.0f; // in seconds
 
     private AudioSource music;
@@ -26,6 +37,7 @@ public class GameUIController : MonoBehaviour {
 
     public void EnableGameMenu()
     {
+		State = StateType.Menu;
         foreach (GameObject ui in gameUiComponents)
         {
             ui.SetActive(false);
@@ -39,6 +51,7 @@ public class GameUIController : MonoBehaviour {
 
     public void EnableGameUi()
     {
+		State = StateType.Game;
         foreach (GameObject ui in gameUiComponents)
         {
             ui.SetActive(true);
