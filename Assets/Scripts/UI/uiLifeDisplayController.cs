@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class uiLifeDisplayController : MonoBehaviour {
 
     public Text textComponent;
-    public SpriteRenderer spriteComponent;
+    public Image imageComponent;
 
     private int m_currentLives;
 

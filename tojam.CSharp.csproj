@@ -75,8 +75,10 @@
     <Compile Include="Assets\PixelCamera2DDemo\Scripts\Rotator.cs" />
     <Compile Include="Assets\Scripts\GridRenderer.cs" />
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
+    <Compile Include="Assets\Scripts\UI\uiGameEndOverlayController.cs" />
     <Compile Include="Assets\Scripts\UI\uiGameTimerController.cs" />
     <Compile Include="Assets\Scripts\UI\uiLifeDisplayController.cs" />
+    <Compile Include="Assets\Scripts\uiDialogueComponent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\level01.txt" />

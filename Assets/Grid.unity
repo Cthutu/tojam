@@ -85,12 +85,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!20 &194248915 stripped
-Camera:
-  m_PrefabParentObject: {fileID: 2020874, guid: 5d02a4c22e4863b4e879b42840169238,
-    type: 2}
-  m_PrefabInternal: {fileID: 1698329536}
---- !u!1001 &420384957
+--- !u!1001 &148881197
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -176,6 +171,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fa757f42649f89b46873454f0f34ed8b, type: 2}
   m_IsPrefabParent: 0
+--- !u!20 &194248915 stripped
+Camera:
+  m_PrefabParentObject: {fileID: 2020874, guid: 5d02a4c22e4863b4e879b42840169238,
+    type: 2}
+  m_PrefabInternal: {fileID: 1698329536}
 --- !u!1 &668625039
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,6 +347,10 @@ Prefab:
     - target: {fileID: 2084274, guid: 5d02a4c22e4863b4e879b42840169238, type: 2}
       propertyPath: m_NormalizedViewPortRect.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2020874, guid: 5d02a4c22e4863b4e879b42840169238, type: 2}
+      propertyPath: m_Depth
+      value: -0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d02a4c22e4863b4e879b42840169238, type: 2}
