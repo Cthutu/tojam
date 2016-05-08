@@ -7,10 +7,22 @@ public class PlayerControl : MonoBehaviour {
 	private Vector3 target;
 	public float speed = 1.0f;
 	private Animator anim;
+	private int mapX = 8, mapY = 4;
+
+	Vector3 getWorldPosition()
+	{
+		return new Vector3(-8f + (float)mapX, 4f - (float)mapY, -1f);
+	}
+
+	int GetWorldObject(int x, int y)
+	{
+		return GameObject.Find("Grid").GetComponent<GridRenderer>().GetWorldId(x, y);
+	}
 
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();
+		transform.position = getWorldPosition();
 	}
 	
 	// Update is called once per frame
@@ -32,25 +44,61 @@ public class PlayerControl : MonoBehaviour {
 					if (inputX < 0.0f)
 					{
 						// Move left
-						target.x -= 1f;
+						if (mapX == 0 || GetWorldObject(mapX - 1, mapY) == 0)
+						{
+							// Can't move left!
+							moving = false;
+						}
+						else
+						{
+							target.x -= 1f;
+							--mapX;
+						}
 					}
 					else
 					{
-						target.x += 1f;
+						// Move right
+						if (mapX == 15 || GetWorldObject(mapX + 1, mapY) == 0)
+						{
+							// Can't move right
+							moving = false;
+						}
+						else
+						{
+							target.x += 1f;
+							++mapX;
+						}
 					}
 				}
 				else
 				{
-					// Prefer vertical movement
-					if (inputY < 0f)
+					if (inputY < 0.0f)
 					{
 						// Move down
-						target.y -= 1f;
+						if (mapY == 7 || GetWorldObject(mapX, mapY + 1) == 0)
+						{
+							// Can't move down!
+							moving = false;
+						}
+						else
+						{
+							target.y -= 1f;
+							++mapY;
+						}
 					}
 					else
 					{
 						// Move up
-						target.y += 1f;
+						if (mapY == 0 || GetWorldObject(mapX, mapY - 1) == 0)
+						{
+							// Can't move up
+							moving = false;
+						}
+						else
+						{
+							target.y += 1f;
+							--mapY;
+						}
 					}
 				}
 			}

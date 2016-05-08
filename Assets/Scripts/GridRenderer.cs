@@ -24,9 +24,9 @@ public class GridRenderer : MonoBehaviour {
 
 	int[,] m_map;
 
-	GameObject createGridSquare(float x, float y, string assetName)
+	public int GetWorldId(int x, int y)
 	{
-		return null;
+		return m_map[y, x];
 	}
 
 	void LoadLevel()
