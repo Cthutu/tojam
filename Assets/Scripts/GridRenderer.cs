@@ -4,55 +4,24 @@ using System.Collections.Generic;
 
 public class GridRenderer : MonoBehaviour {
 
-	public List<TextAsset> LevelFiles;
+	//--- Constants
+	//
 
 	private const int kGridWidth = 16;
 	private const int kGridHeight = 8;
 	private const int kSquarePixelSize = 32;
 
-	class SquareInfo
-	{
-		public int id;
-		public string name;
-		public int colour_id;
-		public string colour_name;
-	}
-
-	Dictionary<char, SquareInfo> m_info;
-	Dictionary<int, SquareInfo> m_indexToInfo;
-	int m_nextId = 1;
-
-	GameObject[] m_prefabs;
-
-	int[,] m_map;
-
-	public int GetWorldId(int x, int y)
-	{
-		return m_map[y, x];
-	}
-
-	private string GetTileName(int x, int y)
-	{
-		return string.Format("Sq:{0:D2}-{1:D2}", y, x);
-	}
-
-	public void Colour(int x, int y)
-	{
-		SquareInfo info = m_indexToInfo[m_map[y, x]];
-		string name = GetTileName(x, y);
-		GameObject tile = GameObject.Find(name);
-		GameObject.Destroy(tile);
-
-		CreateSquare(x * kSquarePixelSize, y * kSquarePixelSize, info.colour_id, name);
-	}
+	//--- Level loading
+	//
+	public List<TextAsset> LevelFiles;
 
 	void LoadLevel(int _level)
 	{
-        if(_level < 0 || LevelFiles.Count <= _level)
-        {
-            Debug.Log("GridRenderer.Loadlevel: _level out of bounds.");
-            return;
-        }
+		if(_level < 0 || LevelFiles.Count <= _level)
+		{
+			Debug.Log("GridRenderer.Loadlevel: _level out of bounds.");
+			return;
+		}
 
 		var file = LevelFiles[_level].text;
 		var lines = file.Split ('\n');
@@ -147,11 +116,60 @@ public class GridRenderer : MonoBehaviour {
 		}
 	}
 
-    void UnloadLevel()
-    {
+	void UnloadLevel()
+	{
 
-    }
+	}
 
+	public void HandleLoadLevel(int _level)
+	{
+		LoadLevel(_level);
+
+		for (int row = 0; row < kGridHeight; ++row)
+		{
+			for (int col = 0; col < kGridWidth; ++col)
+			{
+				int id = m_map[row, col];
+
+				if (id != 0)
+				{
+					CreateSquare(kSquarePixelSize * col, kSquarePixelSize * row, id, GetTileName(col, row));
+				}
+			}
+		}
+
+		Colour(8, 4);
+	}
+
+	public void HandleUnloadLevel()
+	{
+		UnloadLevel();
+	}
+
+
+	//--- Map graphics management
+	//
+
+	class SquareInfo
+	{
+		public int id;
+		public string name;
+		public int colour_id;
+		public string colour_name;
+	}
+
+	Dictionary<char, SquareInfo> m_info;
+	Dictionary<int, SquareInfo> m_indexToInfo;
+	int m_nextId = 1;
+	GameObject[] m_prefabs;
+	public Dictionary<string, Sprite> m_dictSprites = new Dictionary<string, Sprite>();
+
+
+	private string GetTileName(int x, int y)
+	{
+		return string.Format("Sq:{0:D2}-{1:D2}", y, x);
+	}
+	
 	void CreatePrefabTileSprite(int id, string name)
 	{
 		GameObject gob = new GameObject(string.Format("Prefab-Square{0}", id));
@@ -174,64 +192,10 @@ public class GridRenderer : MonoBehaviour {
 		gob.transform.position = pos;
 	}
 
-    public void HandleLoadLevel(int _level)
-    {
-        int w = Screen.width;
-        int h = Screen.height;
-
-        LoadLevel(_level);
-
-        for (int row = 0; row < kGridHeight; ++row)
-        {
-            for (int col = 0; col < kGridWidth; ++col)
-            {
-                int id = m_map[row, col];
-
-                if (id != 0)
-                {
-                    CreateSquare(kSquarePixelSize * col, kSquarePixelSize * row, id, GetTileName(col, row));
-                }
-            }
-        }
-
-        Colour(8, 4);
-    }
-
-    public void HandleUnloadLevel()
-    {
-        UnloadLevel();
-    }
+	//--- Text background graphics managment
+	//
 
 	GameObject[] m_textPrefabs;
-	public Dictionary<string, Sprite> m_dictSprites = new Dictionary<string, Sprite>();
-
-	// Use this for initialization
-	void Start () {
-		// Load the floors
-		Sprite[] sprites = Resources.LoadAll<Sprite>("FloorSheet");
-		
-		foreach (Sprite sprite in sprites)
-		{
-			m_dictSprites.Add(sprite.name, sprite);
-		}
-
-		// Set up the text background tiles
-		m_textPrefabs = new GameObject[TextTiles.Length];
-		for (int i = 0; i < TextTiles.Length; ++i)
-		{
-			GameObject gob = new GameObject(string.Format("Text-Square{0}", i));
-			gob.SetActive(false);
-			m_textPrefabs[i] = gob;
-
-			SpriteRenderer renderer = gob.AddComponent<SpriteRenderer>();
-			renderer.sprite = TextTiles[i];
-		}
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
 	public Sprite[] TextTiles;
 	List<GameObject> m_textTiles;
@@ -285,6 +249,62 @@ public class GridRenderer : MonoBehaviour {
 			Object.Destroy(obj);
 		}
 		m_textTiles.Clear();
+	}
+
+	//--- Map management
+	//
+
+	int[,] m_map;
+
+	public int GetWorldId(int x, int y)
+	{
+		return m_map[y, x];
+	}
+
+	public void Colour(int x, int y)
+	{
+		SquareInfo info = m_indexToInfo[m_map[y, x]];
+		string name = GetTileName(x, y);
+		GameObject tile = GameObject.Find(name);
+		GameObject.Destroy(tile);
+
+		CreateSquare(x * kSquarePixelSize, y * kSquarePixelSize, info.colour_id, name);
+	}
+
+
+	//--- START
+	//
+
+	// Use this for initialization
+	void Start () {
+		// Load the floors
+		Sprite[] sprites = Resources.LoadAll<Sprite>("FloorSheet");
+		
+		foreach (Sprite sprite in sprites)
+		{
+			m_dictSprites.Add(sprite.name, sprite);
+		}
+
+		// Set up the text background tiles
+		m_textPrefabs = new GameObject[TextTiles.Length];
+		for (int i = 0; i < TextTiles.Length; ++i)
+		{
+			GameObject gob = new GameObject(string.Format("Text-Square{0}", i));
+			gob.SetActive(false);
+			m_textPrefabs[i] = gob;
+
+			SpriteRenderer renderer = gob.AddComponent<SpriteRenderer>();
+			renderer.sprite = TextTiles[i];
+		}
+	}
+
+
+	//--- UPDATE
+	//
+	
+	// Update is called once per frame
+	void Update () {
+	
 	}
 
 }
