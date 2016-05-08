@@ -1,11 +1,10 @@
 .x............x.
 xxxxxxxxxxxxxxxx
 .x.....xx.....x.
-.x..xxxooxxx..x.
-.x..xxxooxxx..x.
-.x.....xx.....x.
+.x..xxxxxxxx..x.
+.x..xxxxxxxx..x.
+.x.....xx..x..x.
 xxxxxxxxxxxxxxxx
 .x............x.
 
-x default_floor
-o coloured_floor
+x default_floor coloured_floor
