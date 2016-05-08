@@ -50,11 +50,22 @@ public class GameManager : MonoBehaviour {
     public void StartLevel()
     {
         grid.HandleLoadLevel(playersCurrentLevel);
+		player.InitPlayerPos();
         levelLoaded = true;
         uiController.EnableGameUi();
         uiController.StartDialogue(0);
         uiController.StartEndGameOverlay(false);
     }
+
+	void StartNextLevel()
+	{
+		grid.HandleLoadLevel(++playersCurrentLevel);
+		player.InitPlayerPos();
+		levelLoaded = true;
+		uiController.EnableGameUi();
+		uiController.StartDialogue(1);
+		uiController.StartEndGameOverlay(false);
+	}
 
     public void TimerFinished()
     {
@@ -74,8 +85,9 @@ public class GameManager : MonoBehaviour {
     }
 
     public void MissionSuccess()
-    {
-        uiController.StartDialogue(2);
+	{
+		grid.HandleUnloadLevel();
+		StartNextLevel();
     }
 
     public void FirstMonsterAttack()
@@ -103,10 +115,10 @@ public class GameManager : MonoBehaviour {
             case 2:
                 {
                     // Player Success Dialogue
-                    uiController.EnableGameMenu();
-                    grid.HandleUnloadLevel();
+					//uiController.EnableGameMenu();
                     player.EnablePlayerInput(false);
-                    uiController.StartEndGameOverlay();
+                    //uiController.StartEndGameOverlay();
+					StartLevel();
                     break;
                 }
             case 3:

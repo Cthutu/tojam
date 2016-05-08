@@ -1,0 +1,15 @@
+1,1
+................
+.oooooooooooooo.
+..x.a...bb....o.
+..x.a....b....o.
+..x.aaaa.bbb..o.
+..x....a...b..o.
+.oooooooooooooo.
+................
+
+o floor01 floor01_jam
+x floor03 floor03_jam
+a floor10 floor10_jam
+b floor12 floor12_jam
+

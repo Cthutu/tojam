@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\PixelCamera2D\Scripts\Editor\PixelCamera2DEditor.cs" />
      <None Include="Assets\Resources\level01.txt" />
+     <None Include="Assets\Resources\level02.txt" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>

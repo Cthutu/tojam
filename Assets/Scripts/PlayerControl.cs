@@ -22,6 +22,12 @@ public class PlayerControl : MonoBehaviour {
 		return GameObject.Find("Grid").GetComponent<GridRenderer>().GetWorldId(x, y);
 	}
 
+	public void InitPlayerPos()
+	{
+		mapX = GameObject.Find("Grid").GetComponent<GridRenderer>().StartX;
+		mapY = GameObject.Find("Grid").GetComponent<GridRenderer>().StartY;
+	}
+
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();

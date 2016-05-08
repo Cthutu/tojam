@@ -10,6 +10,8 @@ public class GridRenderer : MonoBehaviour {
 	private const int kGridWidth = 16;
 	private const int kGridHeight = 8;
 	private const int kSquarePixelSize = 32;
+	public int StartX { get; private set; }
+	public int StartY { get; private set; }
 
 	//--- Level loading
 	//
@@ -19,6 +21,7 @@ public class GridRenderer : MonoBehaviour {
 	{
 		m_numTiles = 0;
 		m_numTilesJammed = 0;
+		m_nextId = 0;
 
 		if(_level < 0 || LevelFiles.Count <= _level)
 		{
@@ -76,10 +79,14 @@ public class GridRenderer : MonoBehaviour {
 							++m_numTiles;
 						}
 					}
+					++y;
 				}
 				else
 				{
-					// Invalid line
+					// Must be start coords
+					string[] coordStrings = line.Split(',');
+					StartX = System.Int32.Parse(coordStrings[0]);
+					StartY = System.Int32.Parse(coordStrings[1]);
 				}
 			}
 			else
@@ -103,8 +110,6 @@ public class GridRenderer : MonoBehaviour {
 					}
 				}
 			} // readingMap?
-
-			++y;
 		} // foreach line
 
 		// Create prefabs
@@ -123,7 +128,7 @@ public class GridRenderer : MonoBehaviour {
 
 	void UnloadLevel()
 	{
-
+		DestroyAll();
 	}
 
 	public void HandleLoadLevel(int _level)
@@ -168,6 +173,7 @@ public class GridRenderer : MonoBehaviour {
 	int m_nextId = 1;
 	GameObject[] m_prefabs;
 	public Dictionary<string, Sprite> m_dictSprites = new Dictionary<string, Sprite>();
+	List<GameObject> m_tiles = new List<GameObject>();
 
 
 	private string GetTileName(int x, int y)
@@ -195,6 +201,20 @@ public class GridRenderer : MonoBehaviour {
 		gob.name = name;
 		gob.SetActive(true);
 		gob.transform.position = pos;
+
+		m_tiles.Add(gob);
+	}
+
+	void DestroyAll()
+	{
+		foreach(var gob in m_prefabs)
+		{
+			GameObject.Destroy(gob);
+		}
+		foreach(var gob in m_tiles)
+		{
+			GameObject.Destroy(gob);
+		}
 	}
 
 	//--- Text background graphics managment
@@ -277,6 +297,7 @@ public class GridRenderer : MonoBehaviour {
 		{
 			// Square can be jammed!
 			GameObject tile = GameObject.Find(name);
+			m_tiles.Remove(tile);
 			GameObject.Destroy(tile);
 
 			CreateSquare(x * kSquarePixelSize, y * kSquarePixelSize, info.colour_id, name);
