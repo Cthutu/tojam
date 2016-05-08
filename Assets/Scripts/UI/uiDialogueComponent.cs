@@ -16,7 +16,7 @@ public class uiDialogueComponent : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        ShowCompononents(shouldShowDialogue);
+        ShowComponents(shouldShowDialogue);
 	}
 	
 	// Update is called once per frame
@@ -48,12 +48,14 @@ public class uiDialogueComponent : MonoBehaviour {
 
         if(shouldShowDialogue && !textComponent.gameObject.activeSelf)
         {
-            ShowCompononents(true);
+            ShowComponents(true);
         }
 
         if(textComponent.gameObject.activeSelf && Input.anyKeyDown)
         {
-            ShowCompononents(false);
+            ShowComponents(false);
+			GameObject.Find("Grid").GetComponent<GridRenderer>().ClearRect();
+
             GameManager gMan = GameManager.GetInstance();
             if(gMan)
             {
@@ -62,7 +64,7 @@ public class uiDialogueComponent : MonoBehaviour {
         }
     }
 
-    void ShowCompononents(bool _show)
+    void ShowComponents(bool _show)
     {
         textComponent.gameObject.SetActive(_show);
 		shadowComponent.gameObject.SetActive(_show);
@@ -79,18 +81,21 @@ public class uiDialogueComponent : MonoBehaviour {
         }
 
         currentDialogueIndex = _index;
-        ShowCompononents(true);
+        ShowComponents(true);
 
-        float oldTextHeight = LayoutUtility.GetPreferredHeight(textComponent.rectTransform);
-        float oldTextWidth = LayoutUtility.GetPreferredWidth(textComponent.rectTransform);
+		// Extract text and text rect coords
+		string[] texts = dialoguePresets[_index].Split('/');
+		string coords = texts[0].TrimStart(new char[]{'('}).TrimEnd(new char[]{')'});
+		string[] values = coords.Split(',');
 
-        textComponent.text = dialoguePresets[_index];
-		shadowComponent.text = dialoguePresets[_index];
-        float newTextHeight = LayoutUtility.GetPreferredHeight(textComponent.rectTransform);
-        float newTextWidth = LayoutUtility.GetPreferredWidth(textComponent.rectTransform);
+		GameObject.Find("Grid").GetComponent<GridRenderer>().TextRect(
+			System.Int32.Parse(values[0]),
+			System.Int32.Parse(values[1]),
+			System.Int32.Parse(values[2]),
+			System.Int32.Parse(values[3]));
 
-        float heightScaleFactor = newTextHeight / oldTextHeight;
-        float widthScaleFactor = newTextWidth / oldTextWidth;
+		textComponent.text = texts[1];
+		shadowComponent.text = texts[1];
 
         //imageComponent.rectTransform.localScale.Scale(new Vector3(widthScaleFactor,heightScaleFactor, 0.0f));
         //imageComponent.rectTransform.sizeDelta = new Vector2(imageComponent.rectTransform.rect.width * widthScaleFactor, imageComponent.rectTransform.rect.height * heightScaleFactor);
