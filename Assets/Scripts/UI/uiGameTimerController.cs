@@ -43,7 +43,8 @@ public class uiGameTimerController : MonoBehaviour {
         float timeInDays = timeInHours / 24;
         timeInHours = timeInHours % 24;
 
-        return ((int)timeInDays).ToString() + ":" + ((int)timeInHours).ToString() + ":" + ((int)timeInMinutes).ToString() + ":" + ((int)timeInSeconds).ToString();
+        return string.Format("{0:0}:{1:00}:{2:00}:{3:00}", ((int)timeInDays), ((int)timeInHours), ((int)timeInMinutes), ((int)timeInSeconds));
+        //return ((int)timeInDays).ToString() + ":" + ((int)timeInHours).ToString() + ":" + ((int)timeInMinutes).ToString() + ":" + ((int)timeInSeconds).ToString();
     }
 
     public void SetLevelTime(float _time)
