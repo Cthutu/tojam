@@ -11,13 +11,16 @@ public class GridRenderer : MonoBehaviour {
 	private const int kGridHeight = 8;
 	private const int kSquarePixelSize = 64;
 
-	struct SquareInfo
+	class SquareInfo
 	{
 		public int id;
 		public string name;
+		public int colour_id;
+		public string colour_name;
 	}
 
 	Dictionary<char, SquareInfo> m_info;
+	Dictionary<int, SquareInfo> m_indexToInfo;
 	int m_nextId = 1;
 
 	GameObject[] m_prefabs;
@@ -29,12 +32,28 @@ public class GridRenderer : MonoBehaviour {
 		return m_map[y, x];
 	}
 
+	private string GetTileName(int x, int y)
+	{
+		return string.Format("Sq:{0:D2}-{1:D2}", y, x);
+	}
+
+	public void Colour(int x, int y)
+	{
+		SquareInfo info = m_indexToInfo[m_map[y, x]];
+		string name = GetTileName(x, y);
+		GameObject tile = GameObject.Find(name);
+		GameObject.Destroy(tile);
+
+		CreateSquare(x * kSquarePixelSize, y * kSquarePixelSize, info.colour_id, name);
+	}
+
 	void LoadLevel()
 	{
 		var file = LevelFile.text;
 		var lines = file.Split ('\n');
 		bool readingMap = true;
 		m_info = new Dictionary<char, SquareInfo> ();
+		m_indexToInfo = new Dictionary<int, SquareInfo>();
 		m_map = new int[kGridHeight, kGridWidth];
 		int y = 0;
 
@@ -71,7 +90,9 @@ public class GridRenderer : MonoBehaviour {
 								SquareInfo info = new SquareInfo();
 								info.id = m_nextId++;
 								m_info.Add(line[i], info);
+								m_indexToInfo.Add(info.id, info);
 								id = info.id;
+								info.colour_id = 0;
 							}
 							m_map[y, i] = id;
 						}
@@ -87,13 +108,18 @@ public class GridRenderer : MonoBehaviour {
 				// We are reading the codes
 				string[] codes = line.Trim().Split(' ');
 
-				if (codes.Length == 2 && codes[0].Length == 1)
+				if ((codes.Length == 2 || codes.Length == 3) && codes[0].Length == 1)
 				{
 					char ch = codes[0][0];
 					if (m_info.ContainsKey(ch))
 					{
 						var info = m_info[ch];
 						info.name = codes[1];
+						if (codes.Length == 3)
+						{
+							info.colour_id = m_nextId++;
+							info.colour_name = codes[2];
+						}
 						m_info[ch] = info;
 					}
 				}
@@ -107,21 +133,31 @@ public class GridRenderer : MonoBehaviour {
 		foreach (var infoPair in m_info)
 		{
 			SquareInfo info = infoPair.Value;
-			GameObject gob = new GameObject(string.Format("Prefab-Square{0}", info.id));
-			gob.SetActive(false);
-			m_prefabs[info.id - 1] = gob;
+			CreatePrefabTileSprite(info.id, info.name);
 
-			SpriteRenderer renderer = gob.AddComponent<SpriteRenderer>();
-			Texture2D tex = Resources.Load<Texture2D>(info.name);
-			var newSprite = Sprite.Create(tex, new Rect(0, 0, 64, 64), new Vector2(0.0f, 1.0f), 64.0f);
-			renderer.sprite = newSprite;
+			if (info.colour_id != 0)
+			{
+				CreatePrefabTileSprite(info.colour_id, info.colour_name);
+			}
 		}
+	}
+
+	void CreatePrefabTileSprite(int id, string name)
+	{
+		GameObject gob = new GameObject(string.Format("Prefab-Square{0}", id));
+		gob.SetActive(false);
+		m_prefabs[id - 1] = gob;
+
+		SpriteRenderer renderer = gob.AddComponent<SpriteRenderer>();
+		Texture2D tex = Resources.Load<Texture2D>(name);
+		var newSprite = Sprite.Create(tex, new Rect(0, 0, kSquarePixelSize, kSquarePixelSize), new Vector2(0.0f, 1.0f), (float)kSquarePixelSize);
+		renderer.sprite = newSprite;
 	}
 
 	void CreateSquare(int x, int y, int id, string name)
 	{
-		float xx = -8.0f + ((float)x / 64.0f);
-		float yy = 4.0f - ((float)y / 64.0f);
+		float xx = -8.0f + ((float)x / (float)kSquarePixelSize);
+		float yy = 4.0f - ((float)y / (float)kSquarePixelSize);
 		var pos = new Vector3(xx, yy, 0);
 
 		GameObject gob = GameObject.Instantiate(m_prefabs[id - 1]);
@@ -145,10 +181,12 @@ public class GridRenderer : MonoBehaviour {
 
 				if (id != 0)
 				{
-					CreateSquare(64 * col, 64 * row, id, string.Format("Sq:{0:D2}-{1:D2}", row, col));
+					CreateSquare(kSquarePixelSize * col, kSquarePixelSize * row, id, GetTileName(col, row));
 				}
 			}	
 		}
+
+		Colour(8, 4);
 	}
 	
 	// Update is called once per frame

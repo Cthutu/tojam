@@ -137,6 +137,7 @@ public class PlayerControl : MonoBehaviour {
 					anim.SetFloat("LastMoveY", dir.y);
 					Debug.Log(dir);
 					anim.SetBool("Walking", false);
+					GameObject.Find("Grid").GetComponent<GridRenderer>().Colour(mapX, mapY);
 				}
 				transform.position = newPos;
 			}
