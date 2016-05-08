@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.Audio;
 
 
 [System.Serializable()]
@@ -17,6 +18,7 @@ public class ActorSounds : MonoBehaviour {
         foreach (var pairIt in m_eventClips)
         {
             m_audioSources[pairIt.Key] = gameObject.AddComponent<AudioSource>();
+            m_audioSources[pairIt.Key].outputAudioMixerGroup = Resources.Load<AudioMixer>("Main").FindMatchingGroups("Sound Effects")[0];
             m_audioSources[pairIt.Key].clip = pairIt.Value;
         }
 	}
