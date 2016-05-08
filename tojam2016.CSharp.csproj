@@ -70,10 +70,16 @@
     <Compile Include="Assets\Scripts\ActorSounds.cs" />
     <Compile Include="Assets\Scripts\ConvertUtil.cs" />
     <Compile Include="Assets\Scripts\DictionaryPropertyDrawer.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\GridRenderer.cs" />
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\SerializeableDictionaryBase.cs" />
     <Compile Include="Assets\Scripts\StringUtil.cs" />
+    <Compile Include="Assets\Scripts\UI\GameUIController.cs" />
+    <Compile Include="Assets\Scripts\UI\uiDialogueComponent.cs" />
+    <Compile Include="Assets\Scripts\UI\uiGameEndOverlayController.cs" />
+    <Compile Include="Assets\Scripts\UI\uiGameTimerController.cs" />
+    <Compile Include="Assets\Scripts\UI\uiLifeDisplayController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\level01.txt" />
