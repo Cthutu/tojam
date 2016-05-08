@@ -6,6 +6,7 @@ using System.Collections.Generic;
 public class uiDialogueComponent : MonoBehaviour {
 
     public Text textComponent;
+	public Text shadowComponent;
     public Image imageComponent;
 
     public List<string> dialoguePresets;
@@ -64,7 +65,8 @@ public class uiDialogueComponent : MonoBehaviour {
     void ShowCompononents(bool _show)
     {
         textComponent.gameObject.SetActive(_show);
-        imageComponent.gameObject.SetActive(_show);
+		shadowComponent.gameObject.SetActive(_show);
+        //imageComponent.gameObject.SetActive(_show);
         shouldShowDialogue = _show;
     }
 
@@ -83,6 +85,7 @@ public class uiDialogueComponent : MonoBehaviour {
         float oldTextWidth = LayoutUtility.GetPreferredWidth(textComponent.rectTransform);
 
         textComponent.text = dialoguePresets[_index];
+		shadowComponent.text = dialoguePresets[_index];
         float newTextHeight = LayoutUtility.GetPreferredHeight(textComponent.rectTransform);
         float newTextWidth = LayoutUtility.GetPreferredWidth(textComponent.rectTransform);
 

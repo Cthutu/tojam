@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEditor;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -9,7 +8,7 @@ public class GridRenderer : MonoBehaviour {
 
 	private const int kGridWidth = 16;
 	private const int kGridHeight = 8;
-	private const int kSquarePixelSize = 64;
+	private const int kSquarePixelSize = 32;
 
 	class SquareInfo
 	{
