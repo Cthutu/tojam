@@ -1,0 +1,1043 @@
+fileFormatVersion: 2
+guid: c597ca9cab463d34ba7fe3bd21c6f67c
+timeCreated: 1462681136
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: JammySheet_0
+    21300002: JammySheet_1
+    21300004: JammySheet_2
+    21300006: JammySheet_3
+    21300008: JammySheet_4
+    21300010: JammySheet_5
+    21300012: JammySheet_6
+    21300014: JammySheet_7
+    21300016: JammySheet_8
+    21300018: JammySheet_9
+    21300020: JammySheet_10
+    21300022: JammySheet_11
+    21300024: JammySheet_12
+    21300026: JammySheet_13
+    21300028: JammySheet_14
+    21300030: JammySheet_15
+    21300032: JammySheet_16
+    21300034: JammySheet_17
+    21300036: JammySheet_18
+    21300038: JammySheet_19
+    21300040: JammySheet_20
+    21300042: JammySheet_21
+    21300044: JammySheet_22
+    21300046: JammySheet_23
+    21300048: JammySheet_24
+    21300050: JammySheet_25
+    21300052: JammySheet_26
+    21300054: JammySheet_27
+    21300056: JammySheet_28
+    21300058: JammySheet_29
+    21300060: JammySheet_30
+    21300062: JammySheet_31
+    21300064: JammySheet_32
+    21300066: JammySheet_33
+    21300068: JammySheet_34
+    21300070: JammySheet_35
+    21300072: JammySheet_36
+    21300074: JammySheet_37
+    21300076: JammySheet_38
+    21300078: JammySheet_39
+    21300080: JammySheet_40
+    21300082: JammySheet_41
+    21300084: JammySheet_42
+    21300086: JammySheet_43
+    21300088: JammySheet_44
+    21300090: JammySheet_45
+    21300092: JammySheet_46
+    21300094: JammySheet_47
+    21300096: JammySheet_48
+    21300098: JammySheet_49
+    21300100: JammySheet_50
+    21300102: JammySheet_51
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 64
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: JammySheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 14}
+        - {x: -10, y: 12}
+        - {x: -10, y: -7}
+        - {x: -6, y: -16}
+        - {x: 9, y: -16}
+        - {x: 10, y: -8}
+        - {x: 10, y: 14}
+    - name: JammySheet_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 13}
+        - {x: -10, y: 11}
+        - {x: -10, y: -8}
+        - {x: -6, y: -16}
+        - {x: 7, y: -16}
+        - {x: 10, y: -12}
+        - {x: 10, y: 13}
+    - name: JammySheet_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 14}
+        - {x: -10, y: 12}
+        - {x: -10, y: -7}
+        - {x: -6, y: -16}
+        - {x: 9, y: -16}
+        - {x: 10, y: -8}
+        - {x: 10, y: 14}
+    - name: JammySheet_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 13}
+        - {x: -10, y: 11}
+        - {x: -10, y: -8}
+        - {x: -6, y: -16}
+        - {x: 7, y: -16}
+        - {x: 10, y: -12}
+        - {x: 10, y: 13}
+    - name: JammySheet_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 14}
+        - {x: -10, y: 14}
+        - {x: -10, y: -11}
+        - {x: -9, y: -16}
+        - {x: 3, y: -16}
+        - {x: 10, y: -8}
+        - {x: 10, y: 12}
+    - name: JammySheet_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: -14}
+        - {x: -8, y: -16}
+        - {x: 6, y: -16}
+        - {x: 10, y: -13}
+        - {x: 10, y: 13}
+        - {x: -10, y: 13}
+    - name: JammySheet_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 14}
+        - {x: -10, y: 14}
+        - {x: -10, y: -11}
+        - {x: -9, y: -16}
+        - {x: 3, y: -16}
+        - {x: 10, y: -8}
+        - {x: 10, y: 12}
+    - name: JammySheet_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: -14}
+        - {x: -8, y: -16}
+        - {x: 6, y: -16}
+        - {x: 10, y: -13}
+        - {x: 10, y: 13}
+        - {x: -10, y: 13}
+    - name: JammySheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 10, y: -13}
+        - {x: 10, y: 14}
+        - {x: -10, y: 14}
+    - name: JammySheet_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 13}
+        - {x: -10, y: 11}
+        - {x: -10, y: -8}
+        - {x: -6, y: -16}
+        - {x: 7, y: -16}
+        - {x: 10, y: -12}
+        - {x: 10, y: 13}
+    - name: JammySheet_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 14}
+        - {x: -10, y: -13}
+        - {x: -6, y: -16}
+        - {x: 8, y: -16}
+        - {x: 10, y: -12}
+        - {x: 10, y: 12}
+        - {x: 8, y: 14}
+    - name: JammySheet_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 13}
+        - {x: -10, y: 11}
+        - {x: -10, y: -8}
+        - {x: -6, y: -16}
+        - {x: 7, y: -16}
+        - {x: 10, y: -12}
+        - {x: 10, y: 13}
+    - name: JammySheet_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 14}
+        - {x: -8, y: 14}
+        - {x: -10, y: 12}
+        - {x: -10, y: -7}
+        - {x: -5, y: -16}
+        - {x: 6, y: -16}
+        - {x: 11, y: -9}
+        - {x: 11, y: 13}
+    - name: JammySheet_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 13}
+        - {x: -10, y: 11}
+        - {x: -10, y: -8}
+        - {x: -6, y: -16}
+        - {x: 7, y: -16}
+        - {x: 10, y: -12}
+        - {x: 10, y: 13}
+    - name: JammySheet_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: -13}
+        - {x: -9, y: -16}
+        - {x: 4, y: -16}
+        - {x: 10, y: -13}
+        - {x: 10, y: 14}
+        - {x: -10, y: 14}
+        - {x: -11, y: 8}
+    - name: JammySheet_15
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 13}
+        - {x: -10, y: 11}
+        - {x: -10, y: -8}
+        - {x: -6, y: -16}
+        - {x: 7, y: -16}
+        - {x: 10, y: -12}
+        - {x: 10, y: 13}
+    - name: JammySheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 14}
+        - {x: -10, y: -9}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 10, y: -11}
+        - {x: 10, y: 14}
+    - name: JammySheet_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 13}
+        - {x: -10, y: -13}
+        - {x: -8, y: -16}
+        - {x: 9, y: -16}
+        - {x: 10, y: -14}
+        - {x: 10, y: 13}
+    - name: JammySheet_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 14}
+        - {x: -7, y: 15}
+        - {x: -10, y: 15}
+        - {x: -11, y: 13}
+        - {x: -11, y: 11}
+        - {x: -10, y: -7}
+        - {x: -5, y: -16}
+        - {x: 3, y: -16}
+        - {x: 10, y: -9}
+        - {x: 10, y: 12}
+    - name: JammySheet_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 15}
+        - {x: -16, y: 12}
+        - {x: -16, y: -7}
+        - {x: -12, y: -16}
+        - {x: 10, y: -16}
+        - {x: 10, y: 13}
+        - {x: -2, y: 15}
+    - name: JammySheet_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 14}
+        - {x: -10, y: 12}
+        - {x: -10, y: -7}
+        - {x: -3, y: -16}
+        - {x: 5, y: -16}
+        - {x: 10, y: -7}
+        - {x: 10, y: 12}
+        - {x: 8, y: 14}
+    - name: JammySheet_21
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 13}
+        - {x: -10, y: 13}
+        - {x: -10, y: -14}
+        - {x: -8, y: -16}
+        - {x: 8, y: -16}
+        - {x: 10, y: -13}
+        - {x: 10, y: 11}
+    - name: JammySheet_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 15}
+        - {x: -10, y: 14}
+        - {x: -10, y: -7}
+        - {x: -3, y: -16}
+        - {x: 5, y: -16}
+        - {x: 10, y: -7}
+        - {x: 11, y: 1}
+        - {x: 11, y: 15}
+    - name: JammySheet_23
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 15}
+        - {x: -10, y: 12}
+        - {x: -10, y: -12}
+        - {x: -8, y: -16}
+        - {x: 12, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 14}
+        - {x: 14, y: 15}
+    - name: JammySheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 10, y: -13}
+        - {x: 10, y: 14}
+        - {x: -10, y: 14}
+    - name: JammySheet_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 13}
+        - {x: -10, y: 11}
+        - {x: -10, y: -8}
+        - {x: -6, y: -16}
+        - {x: 7, y: -16}
+        - {x: 10, y: -12}
+        - {x: 10, y: 13}
+    - name: JammySheet_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 14}
+        - {x: -10, y: -13}
+        - {x: -6, y: -16}
+        - {x: 8, y: -16}
+        - {x: 10, y: -12}
+        - {x: 10, y: 12}
+        - {x: 8, y: 14}
+    - name: JammySheet_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 13}
+        - {x: -10, y: 11}
+        - {x: -10, y: -8}
+        - {x: -6, y: -16}
+        - {x: 7, y: -16}
+        - {x: 10, y: -12}
+        - {x: 10, y: 13}
+    - name: JammySheet_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 14}
+        - {x: -10, y: -9}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 10, y: -11}
+        - {x: 10, y: 14}
+    - name: JammySheet_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 13}
+        - {x: -10, y: -13}
+        - {x: -8, y: -16}
+        - {x: 9, y: -16}
+        - {x: 10, y: -14}
+        - {x: 10, y: 13}
+    - name: JammySheet_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 14}
+        - {x: -7, y: 15}
+        - {x: -10, y: 15}
+        - {x: -11, y: 13}
+        - {x: -11, y: 11}
+        - {x: -10, y: -7}
+        - {x: -5, y: -16}
+        - {x: 3, y: -16}
+        - {x: 10, y: -9}
+        - {x: 10, y: 12}
+    - name: JammySheet_31
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 15}
+        - {x: -16, y: 12}
+        - {x: -16, y: -7}
+        - {x: -12, y: -16}
+        - {x: 10, y: -16}
+        - {x: 10, y: 13}
+        - {x: -2, y: 15}
+    - name: JammySheet_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 14}
+        - {x: -10, y: 12}
+        - {x: -10, y: -7}
+        - {x: -3, y: -16}
+        - {x: 5, y: -16}
+        - {x: 10, y: -7}
+        - {x: 10, y: 12}
+        - {x: 8, y: 14}
+    - name: JammySheet_33
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 13}
+        - {x: -10, y: 13}
+        - {x: -10, y: -14}
+        - {x: -8, y: -16}
+        - {x: 8, y: -16}
+        - {x: 10, y: -13}
+        - {x: 10, y: 11}
+    - name: JammySheet_34
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 15}
+        - {x: -10, y: 14}
+        - {x: -10, y: -7}
+        - {x: -3, y: -16}
+        - {x: 5, y: -16}
+        - {x: 10, y: -7}
+        - {x: 11, y: 1}
+        - {x: 11, y: 15}
+    - name: JammySheet_35
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 15}
+        - {x: -10, y: 12}
+        - {x: -10, y: -12}
+        - {x: -8, y: -16}
+        - {x: 12, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 14}
+        - {x: 14, y: 15}
+    - name: JammySheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 15}
+        - {x: -10, y: 13}
+        - {x: -10, y: -6}
+        - {x: -6, y: -15}
+        - {x: 6, y: -15}
+        - {x: 10, y: -10}
+        - {x: 10, y: 15}
+    - name: JammySheet_37
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 6}
+        - {x: -15, y: -5}
+        - {x: -10, y: -10}
+        - {x: 15, y: -10}
+        - {x: 15, y: 8}
+        - {x: 13, y: 10}
+        - {x: -6, y: 10}
+    - name: JammySheet_38
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 15}
+        - {x: -10, y: 8}
+        - {x: -10, y: -15}
+        - {x: 10, y: -15}
+        - {x: 10, y: 6}
+        - {x: 6, y: 15}
+    - name: JammySheet_39
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 10}
+        - {x: -15, y: -10}
+        - {x: 6, y: -10}
+        - {x: 15, y: -6}
+        - {x: 15, y: 5}
+        - {x: 7, y: 10}
+    - name: JammySheet_40
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 15}
+        - {x: -10, y: 13}
+        - {x: -10, y: -6}
+        - {x: -6, y: -15}
+        - {x: 6, y: -15}
+        - {x: 10, y: -10}
+        - {x: 10, y: 15}
+    - name: JammySheet_41
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 6}
+        - {x: -15, y: -5}
+        - {x: -10, y: -10}
+        - {x: 15, y: -10}
+        - {x: 15, y: 8}
+        - {x: 13, y: 10}
+        - {x: -6, y: 10}
+    - name: JammySheet_42
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 15}
+        - {x: -10, y: 8}
+        - {x: -10, y: -15}
+        - {x: 10, y: -15}
+        - {x: 10, y: 6}
+        - {x: 6, y: 15}
+    - name: JammySheet_43
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 10}
+        - {x: -16, y: 9}
+        - {x: -16, y: -14}
+        - {x: -14, y: -16}
+        - {x: 1, y: -16}
+        - {x: 15, y: -9}
+        - {x: 15, y: 6}
+        - {x: 11, y: 10}
+    - name: JammySheet_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 14}
+        - {x: -3, y: -12}
+        - {x: 0, y: -16}
+        - {x: 11, y: -16}
+        - {x: 16, y: -12}
+        - {x: 16, y: 14}
+    - name: JammySheet_45
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 13}
+        - {x: -5, y: -13}
+        - {x: -2, y: -16}
+        - {x: 11, y: -16}
+        - {x: 15, y: -13}
+        - {x: 15, y: 13}
+    - name: JammySheet_46
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 14}
+        - {x: -7, y: -15}
+        - {x: -6, y: -16}
+        - {x: 9, y: -16}
+        - {x: 13, y: -7}
+        - {x: 13, y: 12}
+        - {x: 11, y: 14}
+    - name: JammySheet_47
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 13}
+        - {x: -9, y: -16}
+        - {x: 4, y: -16}
+        - {x: 11, y: -8}
+        - {x: 11, y: 11}
+        - {x: 9, y: 13}
+    - name: JammySheet_48
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: -12}
+        - {x: -7, y: -16}
+        - {x: 2, y: -16}
+        - {x: 9, y: -12}
+        - {x: 9, y: 14}
+        - {x: -11, y: 14}
+    - name: JammySheet_49
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 14}
+        - {x: -8, y: 14}
+        - {x: -10, y: 12}
+        - {x: -10, y: -7}
+        - {x: -5, y: -16}
+        - {x: 6, y: -16}
+        - {x: 11, y: -9}
+        - {x: 11, y: 13}
+    - name: JammySheet_50
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 14}
+        - {x: -10, y: -11}
+        - {x: -5, y: -16}
+        - {x: 8, y: -16}
+        - {x: 10, y: -7}
+        - {x: 10, y: 14}
+    - name: JammySheet_51
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 14}
+        - {x: -16, y: 14}
+        - {x: -16, y: 1}
+        - {x: -10, y: -16}
+        - {x: 11, y: -16}
+        - {x: 11, y: 12}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
