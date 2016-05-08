@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class GridRenderer : MonoBehaviour {
 
-	public TextAsset LevelFile;
+	public List<TextAsset> LevelFiles;
 
 	private const int kGridWidth = 16;
 	private const int kGridHeight = 8;
@@ -47,9 +47,15 @@ public class GridRenderer : MonoBehaviour {
 		CreateSquare(x * kSquarePixelSize, y * kSquarePixelSize, info.colour_id, name);
 	}
 
-	void LoadLevel()
+	void LoadLevel(int _level)
 	{
-		var file = LevelFile.text;
+        if(_level < 0 || LevelFiles.Count <= _level)
+        {
+            Debug.Log("GridRenderer.Loadlevel: _level out of bounds.");
+            return;
+        }
+
+		var file = LevelFiles[_level].text;
 		var lines = file.Split ('\n');
 		bool readingMap = true;
 		m_info = new Dictionary<char, SquareInfo> ();
@@ -142,6 +148,11 @@ public class GridRenderer : MonoBehaviour {
 		}
 	}
 
+    void UnloadLevel()
+    {
+
+    }
+
 	void CreatePrefabTileSprite(int id, string name)
 	{
 		GameObject gob = new GameObject(string.Format("Prefab-Square{0}", id));
@@ -166,27 +177,36 @@ public class GridRenderer : MonoBehaviour {
 		gob.transform.position = pos;
 	}
 
+    public void HandleLoadLevel(int _level)
+    {
+        int w = Screen.width;
+        int h = Screen.height;
+
+        LoadLevel(_level);
+
+        for (int row = 0; row < kGridHeight; ++row)
+        {
+            for (int col = 0; col < kGridWidth; ++col)
+            {
+                int id = m_map[row, col];
+
+                if (id != 0)
+                {
+                    CreateSquare(kSquarePixelSize * col, kSquarePixelSize * row, id, GetTileName(col, row));
+                }
+            }
+        }
+
+        Colour(8, 4);
+    }
+
+    public void HandleUnloadLevel()
+    {
+        UnloadLevel();
+    }
+
 	// Use this for initialization
 	void Start () {
-		int w = Screen.width;
-		int h = Screen.height;
-
-		LoadLevel();
-
-		for (int row = 0; row < kGridHeight; ++row)
-		{
-			for (int col = 0; col < kGridWidth; ++col)
-			{
-				int id = m_map[row, col];
-
-				if (id != 0)
-				{
-					CreateSquare(kSquarePixelSize * col, kSquarePixelSize * row, id, GetTileName(col, row));
-				}
-			}	
-		}
-
-		Colour(8, 4);
 	}
 	
 	// Update is called once per frame

@@ -10,14 +10,17 @@ public class uiDialogueComponent : MonoBehaviour {
 
     public List<string> dialoguePresets;
 
+    private int currentDialogueIndex;
+    private bool shouldShowDialogue = false;
+
 	// Use this for initialization
 	void Start () {
-        ShowCompononents(false);
+        ShowCompononents(shouldShowDialogue);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	    if(Input.GetKeyDown(KeyCode.Alpha0))
+	    /*if(Input.GetKeyDown(KeyCode.Alpha0))
         {
             DisplayDialogue(0);
         }
@@ -40,16 +43,32 @@ public class uiDialogueComponent : MonoBehaviour {
         else if (Input.GetKeyDown(KeyCode.Alpha5))
         {
             DisplayDialogue(5);
+        }*/
+
+        if(shouldShowDialogue && !textComponent.gameObject.activeSelf)
+        {
+            ShowCompononents(true);
+        }
+
+        if(textComponent.gameObject.activeSelf && Input.anyKeyDown)
+        {
+            ShowCompononents(false);
+            GameManager gMan = GameManager.GetInstance();
+            if(gMan)
+            {
+                gMan.DialogFinished(currentDialogueIndex);
+            }
         }
     }
 
     void ShowCompononents(bool _show)
     {
-        textComponent.enabled = _show;
-        imageComponent.enabled = _show;
+        textComponent.gameObject.SetActive(_show);
+        imageComponent.gameObject.SetActive(_show);
+        shouldShowDialogue = _show;
     }
 
-    void DisplayDialogue(int _index)
+    public void DisplayDialogue(int _index)
     {
         if(_index < 0 || dialoguePresets.Count <= _index)
         {
@@ -57,6 +76,7 @@ public class uiDialogueComponent : MonoBehaviour {
             return;
         }
 
+        currentDialogueIndex = _index;
         ShowCompononents(true);
 
         float oldTextHeight = LayoutUtility.GetPreferredHeight(textComponent.rectTransform);
