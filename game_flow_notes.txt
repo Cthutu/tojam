@@ -1,0 +1,5 @@
+1) Hit Space or Enter to interact with the starting button
+2) need to implement unload level in GridRenderer.cs
+3) Need menu art
+4) Need art for the lives image (currently green square x3)
+5) Check GameManager for interfacing functions for player lives and player death and player win

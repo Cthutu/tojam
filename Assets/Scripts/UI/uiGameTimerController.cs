@@ -19,20 +19,40 @@ public class uiGameTimerController : MonoBehaviour {
 	    if(timeStarted)
         {
             time -= Time.deltaTime;
-            if(time < 0)
+
+            textComponent.text = FormatTimeString();
+            if (time < 0)
             {
                 timeStarted = false;
-                // fire times up event
+                GameManager gMan = GameManager.GetInstance();
+                if(gMan)
+                {
+                    gMan.TimerFinished();
+                }
             }
         }
 	}
 
-    void SetLevelTime(float _time)
+    string FormatTimeString()
+    {
+        float timeInSeconds = time;
+        float timeInMinutes = timeInSeconds / 60;
+        timeInSeconds = timeInSeconds % 60;
+        float timeInHours = timeInMinutes / 60;
+        timeInMinutes = timeInMinutes % 60;
+        float timeInDays = timeInHours / 24;
+        timeInHours = timeInHours % 24;
+
+        return string.Format("{0:0}:{1:00}:{2:00}:{3:00}", ((int)timeInDays), ((int)timeInHours), ((int)timeInMinutes), ((int)timeInSeconds));
+        //return ((int)timeInDays).ToString() + ":" + ((int)timeInHours).ToString() + ":" + ((int)timeInMinutes).ToString() + ":" + ((int)timeInSeconds).ToString();
+    }
+
+    public void SetLevelTime(float _time)
     {
         time = _time;
     }
 
-    void StartTimer(bool _start = true)
+    public void StartTimer(bool _start = true)
     {
         timeStarted = _start;
     }
