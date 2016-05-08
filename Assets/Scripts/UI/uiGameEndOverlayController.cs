@@ -39,13 +39,13 @@ public class uiGameEndOverlayController : MonoBehaviour {
         }
 	}
 
-    void ResetOverlay()
+    public void ResetOverlay()
     {
         imageComponent.canvasRenderer.SetAlpha(0.0f);
         doFadeIn = false;
     }
 
-    void EngageOverlay()
+    public void EngageOverlay()
     {
         doFadeIn = true;
         startTime = Time.time;

@@ -50,6 +50,7 @@ public class GameManager : MonoBehaviour {
         levelLoaded = true;
         uiController.EnableGameUi();
         uiController.StartDialogue(0);
+        uiController.StartEndGameOverlay(false);
     }
 
     public void TimerFinished()
@@ -102,6 +103,7 @@ public class GameManager : MonoBehaviour {
                     uiController.EnableGameMenu();
                     grid.HandleUnloadLevel();
                     player.EnablePlayerInput(false);
+                    uiController.StartEndGameOverlay();
                     break;
                 }
             case 3:
@@ -110,6 +112,7 @@ public class GameManager : MonoBehaviour {
                     uiController.EnableGameMenu();
                     grid.HandleUnloadLevel();
                     player.EnablePlayerInput(false);
+                    uiController.StartEndGameOverlay();
                     break;
                 }
             case 4:

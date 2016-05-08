@@ -284,6 +284,11 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 120340, guid: fa757f42649f89b46873454f0f34ed8b, type: 2}
   m_PrefabInternal: {fileID: 157941271}
+--- !u!224 &453621420 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 22456346, guid: fa757f42649f89b46873454f0f34ed8b,
+    type: 2}
+  m_PrefabInternal: {fileID: 157941271}
 --- !u!114 &545779438 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11446346, guid: fa757f42649f89b46873454f0f34ed8b,
@@ -428,6 +433,79 @@ Camera:
   m_PrefabParentObject: {fileID: 2020874, guid: 5d02a4c22e4863b4e879b42840169238,
     type: 2}
   m_PrefabInternal: {fileID: 1698329536}
+--- !u!1 &1577386260
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1577386261}
+  - 222: {fileID: 1577386263}
+  - 114: {fileID: 1577386262}
+  m_Layer: 5
+  m_Name: menuGameTitle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1577386261
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1577386260}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 453621420}
+  m_RootOrder: 2
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 8, y: 98}
+  m_SizeDelta: {x: 247, y: 71}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1577386262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1577386260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.875, g: 0.33455884, b: 0.33455884, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 4
+    m_MaxSize: 50
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Jam Game
+--- !u!222 &1577386263
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1577386260}
 --- !u!1001 &1698329536
 Prefab:
   m_ObjectHideFlags: 0

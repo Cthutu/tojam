@@ -93,4 +93,23 @@ public class GameUIController : MonoBehaviour {
             }
         }
     }
+
+    public void StartEndGameOverlay(bool _engage = true)
+    {
+        foreach (GameObject ui in gameUiComponents)
+        {
+            uiGameEndOverlayController endOverlayController = ui.GetComponent<uiGameEndOverlayController>();
+            if (endOverlayController)
+            {
+                if (_engage)
+                {
+                    endOverlayController.EngageOverlay();
+                }
+                else
+                {
+                    endOverlayController.ResetOverlay();
+                }
+            }
+        }
+    }
 }
