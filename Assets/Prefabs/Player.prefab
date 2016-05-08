@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21227782}
   - 95: {fileID: 9507302}
   - 114: {fileID: 11497146}
+  - 114: {fileID: 11456088}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -47,6 +48,22 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11456088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 451eb74e2b4b4254b84812fc42ea57b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_eventClips:
+    _keys:
+    - footstep
+    _values:
+    - {fileID: 8300000, guid: ce4b966df6dc0404a9dd344410ab9703, type: 3}
 --- !u!114 &11497146
 MonoBehaviour:
   m_ObjectHideFlags: 1
