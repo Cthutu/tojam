@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Audio;
 
 public class GameUIController : MonoBehaviour {
 
@@ -25,7 +26,9 @@ public class GameUIController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         music = gameObject.AddComponent<AudioSource>();
+        music.outputAudioMixerGroup = Resources.Load<AudioMixer>("Main").FindMatchingGroups("BGM")[0];
         music.clip = Resources.Load<AudioClip>("BGM/Intro");
+        music.loop = false;
         music.Play();
         EnableGameMenu();
     }
@@ -52,6 +55,10 @@ public class GameUIController : MonoBehaviour {
     public void EnableGameUi()
     {
 		State = StateType.Game;
+        music.clip = Resources.Load<AudioClip>("BGM/Gameplay");
+        music.loop = true;
+        music.Play();
+
         foreach (GameObject ui in gameUiComponents)
         {
             ui.SetActive(true);
