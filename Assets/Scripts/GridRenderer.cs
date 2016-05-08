@@ -204,12 +204,79 @@ public class GridRenderer : MonoBehaviour {
         UnloadLevel();
     }
 
+	GameObject[] m_textPrefabs;
+
 	// Use this for initialization
 	void Start () {
+		m_textPrefabs = new GameObject[TextTiles.Length];
+		for (int i = 0; i < TextTiles.Length; ++i)
+		{
+			GameObject gob = new GameObject(string.Format("Text-Square{0}", i));
+			gob.SetActive(false);
+			m_textPrefabs[i] = gob;
+
+			SpriteRenderer renderer = gob.AddComponent<SpriteRenderer>();
+			renderer.sprite = TextTiles[i];
+		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
 	}
+
+	public Sprite[] TextTiles;
+	List<GameObject> m_textTiles;
+
+	void AddTextRect(int x, int y, int id)
+	{
+		var pos = new Vector3(-8f + x, 4f - y, -2f);
+		GameObject gob = GameObject.Instantiate(m_textPrefabs[id]);
+		gob.name = "TextBackground";
+		gob.SetActive(true);
+		gob.transform.position = pos;
+		m_textTiles.Add(gob);
+	}
+
+	public void TextRect(int x, int y, int width, int height)
+	{
+		m_textTiles = new List<GameObject>();
+
+		// Do corners
+		AddTextRect(x, y, 0);
+		AddTextRect(x + width - 1, y, 2);
+		AddTextRect(x, y + height - 1, 6);
+		AddTextRect(x + width - 1, y + height - 1, 8);
+
+		// Do sides
+		for (int i = 1; i < height - 1; ++i)
+		{
+			AddTextRect(x, y + i, 3);
+			AddTextRect(x + width - 1, y + i, 5);
+		}
+		for (int i = 1; i < width - 1; ++i)
+		{
+			AddTextRect(x + i, y, 1);
+			AddTextRect(x + i, y + height - 1, 7);
+		}
+
+		// Do centre
+		for (int i = 1; i < width - 1; ++i)
+		{
+			for (int j = 1; j < height - 1; ++j)
+			{
+				AddTextRect(x + i, y + j, 4);
+			}
+		}
+	}
+
+	public void ClearRect()
+	{
+		foreach (var obj in m_textTiles)
+		{
+			Object.Destroy(obj);
+		}
+		m_textTiles.Clear();
+	}
+
 }

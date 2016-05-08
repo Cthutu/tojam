@@ -28,7 +28,7 @@ public class uiGameEndOverlayController : MonoBehaviour {
         }
         if (doFadeIn)
         {
-            float currentAlpha = imageComponent.canvasRenderer.GetAlpha();
+            //float currentAlpha = imageComponent.canvasRenderer.GetAlpha();
             float lerpValue = (Time.time - startTime) / fadeTime;
             imageComponent.canvasRenderer.SetAlpha(lerpValue);
             if(imageComponent.canvasRenderer.GetAlpha() >= 1.0f)
